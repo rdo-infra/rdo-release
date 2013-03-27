@@ -1,0 +1,7 @@
+[openstack-grizzly]
+name=OpenStack Grizzly Repository
+baseurl=http://repos.fedorapeople.org/repos/openstack/openstack-grizzly/%DIST%-%RELEASEVER%/
+enabled=1
+skip_if_unavailable=1
+gpgcheck=0
+priority=98
