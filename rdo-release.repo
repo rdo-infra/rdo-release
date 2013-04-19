@@ -4,4 +4,5 @@ baseurl=http://repos.fedorapeople.org/repos/openstack/openstack-grizzly/%DIST%-%
 enabled=1
 skip_if_unavailable=1
 gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-RDO-Grizzly
 priority=98
