@@ -1,11 +1,13 @@
 Name:           rdo-release
 #Version:        7
-# setting Version to grizzly my be a bad idea, but it makes it clear to the user
+# setting Version to grizzly may be a bad idea, but it makes it clear to the user
 # that is is the grizzly version without having to change the package name
 # Alternativly I would set it to 7 (8 = Havana etc...)
 Version:        grizzly
-Release:        1
+Release:        2
 Summary:        RDO repository configuration
+
+Requires:       yum-plugin-priorities
 
 Group:          System Environment/Base
 License:        Apache2
@@ -50,6 +52,9 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
+* Fri Apr 19 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-2
+- Depend on yum-plugin-priorities
+
 * Tue Apr 09 2013 Martin Mágr <mmagr@redhat.com> - rdo-release-grizzly-1
 - Added GPG key
 
