@@ -3,7 +3,7 @@ Name:           rdo-release
 # setting Version to grizzly my be a bad idea, but it makes it clear to the user
 # that is is the grizzly version without having to change the package name
 # Alternativly I would set it to 7 (8 = Havana etc...)
-Version:        grizzly 
+Version:        grizzly
 Release:        1
 Summary:        RDO repository configuration
 
@@ -12,6 +12,7 @@ License:        Apache2
 
 URL:            http://repos.fedorapeople.org/repos/openstack/
 Source0:        rdo-release.repo
+Source1:        RPM-GPG-KEY-RDO-Grizzly
 
 BuildArch:      noarch
 
@@ -21,8 +22,12 @@ This package contains the RDO repository
 %install
 install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/rdo-release.repo
 
+#GPG Key
+install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Grizzly
+
 %files
 %{_sysconfdir}/yum.repos.d/rdo-release.repo
+%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Grizzly
 
 %post
 
@@ -45,5 +50,8 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
+* Tue Apr 09 2013 Martin Mágr <mmagr@redhat.com> - rdo-release-grizzly-1
+- Added GPG key
+
 * Wed Mar 27 2013 Derek Higgins <derekh@redhat.com> - rdo-release-grizzly-1
 - Creating Package
