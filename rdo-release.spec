@@ -52,8 +52,9 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
-* Fri Apr 19 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-2
+* Thu Apr 25 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-2
 - Depend on yum-plugin-priorities
+- Enable GPG key by default
 
 * Tue Apr 09 2013 Martin Mágr <mmagr@redhat.com> - rdo-release-grizzly-1
 - Added GPG key
