@@ -1,10 +1,6 @@
 Name:           rdo-release
-#Version:        7
-# setting Version to grizzly may be a bad idea, but it makes it clear to the user
-# that is is the grizzly version without having to change the package name
-# Alternativly I would set it to 7 (8 = Havana etc...)
-Version:        grizzly
-Release:        3
+Version:        havana
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -12,7 +8,7 @@ License:        Apache2
 
 URL:            http://repos.fedorapeople.org/repos/openstack/
 Source0:        rdo-release.repo
-Source1:        RPM-GPG-KEY-RDO-Grizzly
+Source1:        RPM-GPG-KEY-RDO-Havana
 
 BuildArch:      noarch
 
@@ -23,17 +19,17 @@ This package contains the RDO repository
 install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 #GPG Key
-install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Grizzly
+install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Havana
 
 %files
 %{_sysconfdir}/yum.repos.d/rdo-release.repo
-%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Grizzly
+%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Havana
 
 %post
 
-# set baseurl (will this be moved to rdo url)
-# baseurl=http://repos.fedorapeople.org/repos/openstack/openstack-grizzly/fedora-$releasever/
-# baseurl=http://repos.fedorapeople.org/repos/openstack/openstack-grizzly/epel-6/
+# set baseurl
+# baseurl=http://rdo.fedorapeople.org/openstack/openstack-havana/fedora-$releasever/
+# baseurl=http://rdo.fedorapeople.org/openstack/openstack-havana/epel-6/
 
 DIST=fedora
 RELEASEVER='$releasever'
@@ -50,6 +46,9 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
+* Tue Jul 23 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-1
+- Update to Havana
+
 * Thu May 09 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-3
 - Remove dependency on yum-plugin-priorities, to avoid optional repo dependency
 
