@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        havana
-Release:        1
+Release:        2
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -46,7 +46,7 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
-* Tue Jul 23 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-1
+* Tue Jul 23 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-2
 - Update to Havana
 
 * Thu May 09 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-3
