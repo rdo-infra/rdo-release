@@ -4,7 +4,7 @@ Name:           rdo-release
 # that is is the grizzly version without having to change the package name
 # Alternativly I would set it to 7 (8 = Havana etc...)
 Version:        grizzly
-Release:        3
+Release:        4
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -50,6 +50,9 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
+* Thu Aug  1 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-4
+- Don't skip the RDO repo if unavailable
+
 * Thu May 09 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-3
 - Remove dependency on yum-plugin-priorities, to avoid optional repo dependency
 
