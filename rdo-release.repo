@@ -2,7 +2,7 @@
 name=OpenStack Havana Repository
 baseurl=http://repos.fedorapeople.org/repos/openstack/openstack-havana/%DIST%-%RELEASEVER%/
 enabled=1
-skip_if_unavailable=1
+skip_if_unavailable=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-RDO-Havana
 priority=98
