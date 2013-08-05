@@ -16,6 +16,8 @@ Source1:        RPM-GPG-KEY-RDO-Grizzly
 
 BuildArch:      noarch
 
+Requires:       foreman-release
+
 %description
 This package contains the RDO repository
 
@@ -50,8 +52,9 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
-* Thu Aug  1 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-4
+* Sun Aug  4 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-4
 - Don't skip the RDO repo if unavailable
+- Depend on foreman-release
 
 * Thu May 09 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-3
 - Remove dependency on yum-plugin-priorities, to avoid optional repo dependency
