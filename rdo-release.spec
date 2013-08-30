@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        havana
-Release:        5
+Release:        6
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -60,7 +60,7 @@ for repo in rdo-release foreman puppetlabs; do
 done
 
 %changelog
-* Fri Aug 30 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-5
+* Fri Aug 30 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-6
 - Revert Requires: on foreman-release
 - Add references to foreman and puppetlabs repositories
 
