@@ -4,7 +4,7 @@ Name:           rdo-release
 # that is is the grizzly version without having to change the package name
 # Alternativly I would set it to 7 (8 = Havana etc...)
 Version:        grizzly
-Release:        4
+Release:        5
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -15,8 +15,6 @@ Source0:        rdo-release.repo
 Source1:        RPM-GPG-KEY-RDO-Grizzly
 
 BuildArch:      noarch
-
-Requires:       foreman-release
 
 %description
 This package contains the RDO repository
@@ -52,6 +50,9 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
+* Fri Aug 30 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-5
+- Revert Requires: on foreman-release
+
 * Sun Aug  4 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-grizzly-4
 - Don't skip the RDO repo if unavailable
 - Depend on foreman-release
