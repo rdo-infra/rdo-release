@@ -6,7 +6,7 @@ Summary:        RDO repository configuration
 Group:          System Environment/Base
 License:        Apache2
 
-URL:            http://repos.fedorapeople.org/repos/openstack/
+URL:            https://github.com/redhat-openstack/rdo-release
 Source0:        rdo-release.repo
 Source1:        RPM-GPG-KEY-RDO-Havana
 Source2:        foreman.repo
