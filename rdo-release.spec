@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        havana
-Release:        3
+Release:        4
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -11,8 +11,6 @@ Source0:        rdo-release.repo
 Source1:        RPM-GPG-KEY-RDO-Havana
 
 BuildArch:      noarch
-
-Requires:       foreman-release
 
 %description
 This package contains the RDO repository
@@ -48,6 +46,9 @@ sed -i -e "s/%DIST%/$DIST/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 sed -i -e "s/%RELEASEVER%/$RELEASEVER/g" %{_sysconfdir}/yum.repos.d/rdo-release.repo
 
 %changelog
+* Fri Aug 30 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-4
+- Revert Requires: on foreman-release
+
 * Sun Aug  4 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-3
 - Don't skip the RDO repo if unavailable
 - Depend on foreman-release
