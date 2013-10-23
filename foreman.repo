@@ -1,27 +1,27 @@
 [foreman]
 name=Foreman stable
-baseurl=http://yum.theforeman.org/releases/1.2/%FDIST%%RELEASEVER%/$basearch
+baseurl=http://yum.theforeman.org/releases/1.3/%FDIST%%RELEASEVER%/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
 
 [foreman-source]
 name=Foreman stable - source
-baseurl=http://yum.theforeman.org/releases/1.2/%FDIST%%RELEASEVER%/source
+baseurl=http://yum.theforeman.org/releases/1.3/%FDIST%%RELEASEVER%/source
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
 
 [foreman-plugins]
 name=Foreman stable - plugins
-baseurl=http://yum.theforeman.org/plugins/1.2/%FDIST%%RELEASEVER%/$basearch
+baseurl=http://yum.theforeman.org/plugins/1.3/%FDIST%%RELEASEVER%/$basearch
 enabled=1
 gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
 
 [foreman-plugins-source]
 name=Foreman stable - plugins source
-baseurl=http://yum.theforeman.org/plugins/1.2/%FDIST%%RELEASEVER%/source
+baseurl=http://yum.theforeman.org/plugins/1.3/%FDIST%%RELEASEVER%/source
 enabled=0
 gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
