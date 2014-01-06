@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        havana
-Release:        7
+Version:        icehouse
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -8,7 +8,7 @@ License:        Apache2
 
 URL:            https://github.com/redhat-openstack/rdo-release
 Source0:        rdo-release.repo
-Source1:        RPM-GPG-KEY-RDO-Havana
+Source1:        RPM-GPG-KEY-RDO-Icehouse
 Source2:        foreman.repo
 Source3:        RPM-GPG-KEY-foreman
 Source4:        puppetlabs.repo
@@ -25,7 +25,7 @@ install -p -D -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d/foreman.r
 install -p -D -m 644 %{SOURCE4} %{buildroot}%{_sysconfdir}/yum.repos.d/puppetlabs.repo
 
 #GPG Keys
-install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Havana
+install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Icehouse
 install -Dpm 644 %{SOURCE3} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-foreman
 install -Dpm 644 %{SOURCE5} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-puppetlabs
 
@@ -59,7 +59,18 @@ for repo in rdo-release foreman puppetlabs; do
   done
 done
 
+# foreman isn't currrently supported on Fedora
+# Furthermore there isn't even an f20 dir on yum.theforeman.org
+# So just avoid the foreman repos on fedora for now
+if [ "$DIST" = 'fedora' ]; then
+  sed -i -e 's/enabled=1/enabled=0/' %{_sysconfdir}/yum.repos.d/foreman.repo
+fi
+
 %changelog
+* Mon Jan 06 2014 Pádraig Brady <pbrady@redhat.com> - rdo-release-icehouse-1
+- Update to Icehouse
+- Disable the foreman repos on Fedora
+
 * Wed Oct 23 2013 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-7
 - Reference latest stable foreman release (1.3)
 
