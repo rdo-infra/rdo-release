@@ -1,6 +1,6 @@
 [foreman]
 name=Foreman stable
-baseurl=http://yum.theforeman.org/releases/1.3/%FDIST%%RELEASEVER%/$basearch
+baseurl=http://yum.theforeman.org/releases/1.3/%FDIST%%RELEASEVER%/x86_64
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
@@ -14,7 +14,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
 
 [foreman-plugins]
 name=Foreman stable - plugins
-baseurl=http://yum.theforeman.org/plugins/1.3/%FDIST%%RELEASEVER%/$basearch
+baseurl=http://yum.theforeman.org/plugins/1.3/%FDIST%%RELEASEVER%/x86_64
 enabled=1
 gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
