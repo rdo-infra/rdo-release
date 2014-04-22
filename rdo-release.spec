@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        icehouse
-Release:        2
+Release:        3
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -74,6 +74,9 @@ for repo in rdo-release foreman puppetlabs; do
 done
 
 %changelog
+* Tue Apr 22 2014 Pádraig Brady <pbrady@redhat.com> - icehouse-3
+- Link to foreman 1.5 which is compatible with puppet >= 3.5.1
+
 * Mon Mar 03 2014 Pádraig Brady <pbrady@redhat.com> - icehouse-2
 - Disable the foreman repos on EL7
 
