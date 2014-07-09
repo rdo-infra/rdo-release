@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        havana
-Release:        8
+Release:        9
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -60,6 +60,9 @@ for repo in rdo-release foreman puppetlabs; do
 done
 
 %changelog
+* Wed Jul 09 2014 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-9
+- Update the foreman GPG key which changed mid release
+
 * Tue Apr 22 2014 Pádraig Brady <pbrady@redhat.com> - rdo-release-havana-8
 - Link to foreman 1.5 which is compatible with puppet >= 3.5.1
 
