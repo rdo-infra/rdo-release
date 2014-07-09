@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        icehouse
-Release:        3
+Release:        4
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -74,6 +74,9 @@ for repo in rdo-release foreman puppetlabs; do
 done
 
 %changelog
+* Wed Jul 09 2014 Pádraig Brady <pbrady@redhat.com> - icehouse-4
+- Update the foreman GPG key which changed mid release
+
 * Tue Apr 22 2014 Pádraig Brady <pbrady@redhat.com> - icehouse-3
 - Link to foreman 1.5 which is compatible with puppet >= 3.5.1
 
