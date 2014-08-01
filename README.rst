@@ -41,7 +41,7 @@ Generating a new OpenStack release key (replace "grizzly" with release name)
 * Double check passphrase is OK with
 
   * ``echo "1234" | gpg --no-use-agent -o /dev/null --local-user 'rdo-grizzly-sign' -as - &&
-      echo "The correct passphrase was entered for this key"``
+    echo "The correct passphrase was entered for this key"``
 
 * Generate key for rpm
 
