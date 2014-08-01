@@ -29,8 +29,10 @@ Please ensure your personal key has sufficient trust,
 before using it to sign the openstack release key.
 Contact P@draigBrady.com for details on this.
 
-Generating a new OpenStack release key (replace "grizzly" with release name)
-----------------------------------------------------------------------------
+Replace *grizzly* with the release name below.
+
+Generating a new OpenStack release key
+--------------------------------------
 * gpg --gen-key
 
   * Full RSA/RSA, 4096
@@ -57,8 +59,8 @@ Verify generated key
 Sign the release (pub not sub) key in the public web of trust
 --------------------------------------------------------------
 * ``gpg --fingerprint 'rdo-grizzly-sign'``
-* ``gpg --sign-key --default-cert-level 3 D97B3247``
-* ``gpg --keyserver keys.gnupg.net --send-keys D97B3247``
+* ``gpg --sign-key --default-cert-level 3 D97B3247`` (adjust accordingly)
+* ``gpg --keyserver keys.gnupg.net --send-keys D97B3247`` (adjust accordingly)
 
 Make private key available on staging server
 -----------------------------------------
