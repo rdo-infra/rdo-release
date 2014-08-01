@@ -3,12 +3,14 @@ Release RPM Update process
 
 * If a major release, generate a new signing key as documented below
 * Do local rpmbuild.
-* If ever need release rpm from elsewhere then copy in and ...
+* If ever need release rpm from elsewhere then copy, then
+
   * Sign with appropriate key. Note this will resign. I.E. remove foreman key
     and add our key as only RPM versions prior to 4.1 allowed you to sign a
     package with multiple keys, which causes problems for automatic verification.
 * add git tags, and push changes and tags
-* Copy to team:/$openstack-stage/openstack-$release/ and there...
+* Copy to team:/$openstack-stage/openstack-$release/ and there
+
   * Update openstack-$release/.htaccess
   * sign-rpms rdo-$release rdo-release-$release.*.rpm
   * Link from openstack-$release/$dist/
@@ -30,14 +32,19 @@ Contact P@draigBrady.com for details on this.
 Generating a new OpenStack release key (replace "grizzly" with release name)
 ----------------------------------------------------------------------------
 * gpg --gen-key
-  * Full RSA/RSA, 4096,
+
+  * Full RSA/RSA, 4096
   * Expiry: 0
   * Name: rdo-grizzly-sign, email: rdo-info@redhat.com, comment: none
   * pass = select a pass phrase to use here
-* Double check passphrase is OK with:
+
+* Double check passphrase is OK with
+
   * ``echo "1234" | gpg --no-use-agent -o /dev/null --local-user 'rdo-grizzly-sign' -as - &&
       echo "The correct passphrase was entered for this key"``
+
 * Generate key for rpm
+
   * ``gpg --export -a 'rdo-grizzly-sign' > RPM-GPG-KEY-RDO-Grizzly``
   * add RPM-GPG-KEY-RDO-Grizzly to the release RPM package
 
@@ -60,7 +67,9 @@ Make private key available on staging server
 * ``ssh team; cd $openstack-stage``
 * ``chmod a-w,o-r grizzly-team-key``
 * Each dev does once
+
   * ``gpg --import grizzly-team-key``
 
-* Each rpm is signed by the team server script, but that essentially does:
+* Each rpm is signed by the team server script, but that essentially does
+
   * ``rpm --addsign --define "_gpg_name rdo-grizzly-sign" *.rpm``
