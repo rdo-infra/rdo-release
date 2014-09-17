@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        juno
-Release:        0
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -8,6 +8,7 @@ License:        Apache2
 
 URL:            https://github.com/redhat-openstack/rdo-release
 Source0:        rdo-release.repo
+Source1:        RPM-GPG-KEY-RDO-Juno
 
 BuildArch:      noarch
 
@@ -17,8 +18,12 @@ This package contains the RDO repository
 %install
 install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/rdo-release.repo
 
+#GPG Keys
+install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Juno
+
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
+%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %post
 
@@ -43,7 +48,7 @@ for repo in rdo-release ; do
 done
 
 %changelog
-* Tue Sep 16 2014 Alan Pevec <apevec@redhat.com> - juno-0
+* Thu Sep 18 2014 Alan Pevec <apevec@redhat.com> - juno-1
 - Update to Juno
 
 * Wed Jul 09 2014 Pádraig Brady <pbrady@redhat.com> - icehouse-4
