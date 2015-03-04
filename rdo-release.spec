@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        juno
-Release:        1
+Version:        kilo
+Release:        0
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -48,6 +48,9 @@ for repo in rdo-release ; do
 done
 
 %changelog
+* Wed Mar 04 2015 Alan Pevec <apevec@redhat.com> - kilo-0
+- bootstrap RDO Kilo
+
 * Thu Sep 18 2014 Alan Pevec <apevec@redhat.com> - juno-1
 - Update to Juno
 
