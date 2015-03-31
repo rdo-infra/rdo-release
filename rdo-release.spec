@@ -40,13 +40,13 @@ install -Dpm 644 %{SOURCE5} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-p
 DIST=fedora
 FDIST=f
 RELEASEVER='$releasever'
-if ! grep -qFi 'fedora' /etc/redhat-release; then
+if ! grep -qFi 'fedora' /etc/system-release; then
   DIST=epel # Should this be something else (maybe el)?
   FDIST=el
   # $releasever doesn't seem to be a reliable way to get the major version on RHEL
   # e.g. if distroverpkg isn't present in yum.conf mine was set to 6Server
   # because this was the version of the package redhat-release-server-6Server
-  RELEASEVER=$(sed -e 's/.*release \([0-9]\+\).*/\1/' /etc/redhat-release)
+  RELEASEVER=$(sed -e 's/.*release \([0-9]\+\).*/\1/' /etc/system-release)
 fi
 
 # foreman isn't currrently supported on Fedora.
