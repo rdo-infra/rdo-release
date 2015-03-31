@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        icehouse
-Release:        4
+Release:        4.1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -74,6 +74,9 @@ for repo in rdo-release foreman puppetlabs; do
 done
 
 %changelog
+* Wed Apr 01 2015 Alan Pevec <apevec@redhat.com> - icehouse-4.1
+- fix for CentOS 7.1 redhat-release split
+
 * Wed Jul 09 2014 Pádraig Brady <pbrady@redhat.com> - icehouse-4
 - Update the foreman GPG key which changed mid release
 
