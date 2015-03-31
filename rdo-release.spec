@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        kilo
-Release:        0
+Release:        0.1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -48,6 +48,9 @@ for repo in rdo-release ; do
 done
 
 %changelog
+* Wed Apr 01 2015 Alan Pevec <apevec@redhat.com> - kilo-0.1
+- fix for CentOS 7.1 redhat-release split
+
 * Wed Mar 04 2015 Alan Pevec <apevec@redhat.com> - kilo-0
 - bootstrap RDO Kilo
 
