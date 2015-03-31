@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        juno
-Release:        1
+Release:        1.1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -48,6 +48,9 @@ for repo in rdo-release ; do
 done
 
 %changelog
+* Wed Apr 01 2015 Alan Pevec <apevec@redhat.com> - juno-1.1
+- fix for CentOS 7.1 redhat-release split
+
 * Thu Sep 18 2014 Alan Pevec <apevec@redhat.com> - juno-1
 - Update to Juno
 
