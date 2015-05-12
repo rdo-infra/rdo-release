@@ -3,4 +3,4 @@ name=OpenStack Kilo Testing
 baseurl=http://repos.fedorapeople.org/repos/openstack/openstack-kilo/testing/%FDIST%%RELEASEVER%/
 skip_if_unavailable=0
 gpgcheck=0
-enabled=1
+enabled=0

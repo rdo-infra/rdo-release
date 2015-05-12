@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        kilo
-Release:        0.1
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -8,7 +8,8 @@ License:        Apache2
 
 URL:            https://github.com/redhat-openstack/rdo-release
 Source0:        rdo-release.repo
-Source1:        RPM-GPG-KEY-RDO-Juno
+Source2:        rdo-testing.repo
+Source1:        RPM-GPG-KEY-RDO-Kilo
 
 BuildArch:      noarch
 
@@ -17,6 +18,7 @@ This package contains the RDO repository
 
 %install
 install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/rdo-release.repo
+install -p -D -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d/rdo-testing.repo
 
 #GPG Keys
 install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Juno
@@ -28,26 +30,31 @@ install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-R
 %post
 
 # Adjust repos as per dist and version
+source /etc/os-release
+DIST=$ID
+RELEASEVER=$VERSION_ID
 
-DIST=fedora
-FDIST=f
-RELEASEVER='$releasever'
-if ! grep -qFi 'fedora' /etc/system-release; then
-  DIST=epel # Should this be something else (maybe el)?
+if [ "$DIST" != 'fedora' ]; then
+  DIST=el
   FDIST=el
   # $releasever doesn't seem to be a reliable way to get the major version on RHEL
   # e.g. if distroverpkg isn't present in yum.conf mine was set to 6Server
   # because this was the version of the package redhat-release-server-6Server
   RELEASEVER=$(sed -e 's/.*release \([0-9]\+\).*/\1/' /etc/system-release)
+else
+  FDIST=f
 fi
 
-for repo in rdo-release ; do
+for repo in rdo-release rdo-testing ; do
   for var in DIST FDIST RELEASEVER; do
     sed -i -e "s/%$var%/$(eval echo \$$var)/g" %{_sysconfdir}/yum.repos.d/$repo.repo
   done
 done
 
 %changelog
+* Tue May 12 2015 Alan Pevec <apevec@redhat.com> - kilo-1
+- Update to Kilo
+
 * Wed Apr 01 2015 Alan Pevec <apevec@redhat.com> - kilo-0.1
 - fix for CentOS 7.1 redhat-release split
 
