@@ -17,11 +17,13 @@ BuildArch:      noarch
 This package contains the RDO repository
 
 %install
-install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/rdo-release.repo
-install -p -D -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d/rdo-testing.repo
+install -p -d %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
 
 #GPG Keys
-install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-RDO-Juno
+install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
