@@ -9,7 +9,7 @@ License:        Apache2
 URL:            https://github.com/redhat-openstack/rdo-release
 Source0:        rdo-release.repo
 Source2:        rdo-testing.repo
-Source1:        RPM-GPG-KEY-RDO-Kilo
+Source1:        RPM-GPG-KEY-RDO-kilo
 
 BuildArch:      noarch
 
