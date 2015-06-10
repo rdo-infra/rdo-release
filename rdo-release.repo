@@ -1,6 +1,6 @@
 [openstack-kilo]
 name=OpenStack Kilo Repository
-baseurl=http://repos.fedorapeople.org/repos/openstack/openstack-kilo/%FDIST%%RELEASEVER%/
+baseurl=https://repos.fedorapeople.org/repos/openstack/openstack-kilo/%FDIST%%RELEASEVER%/
 skip_if_unavailable=0
 enabled=1
 gpgcheck=1
