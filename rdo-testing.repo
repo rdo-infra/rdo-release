@@ -1,6 +1,5 @@
 [openstack-kilo-testing]
 name=OpenStack Kilo Testing
-baseurl=https://repos.fedorapeople.org/repos/openstack/openstack-kilo/testing/%FDIST%%RELEASEVER%/
-skip_if_unavailable=0
+baseurl=http://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-kilo/
 gpgcheck=0
 enabled=0
