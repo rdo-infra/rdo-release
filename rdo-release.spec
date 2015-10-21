@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        liberty
-Release:        1
+Release:        2
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -31,6 +31,9 @@ install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Oct 21 2015 Alan Pevec <apevec@redhat.com> - liberty-2
+- Liberty GA
+
 * Tue Oct 20 2015 Alan Pevec <apevec@redhat.com> - liberty-1
 - Update to Liberty using CloudSIG repo
 
