@@ -1,6 +1,6 @@
 [openstack-liberty]
 name=OpenStack Liberty Repository
-baseurl=http://mirror.centos.org/centos/$releasever/cloud/$basearch/openstack-liberty/
+baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-liberty/
 gpgcheck=1
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud

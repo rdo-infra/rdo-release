@@ -1,5 +1,5 @@
 [openstack-liberty-testing]
 name=OpenStack Liberty Testing
-baseurl=http://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-liberty/
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-liberty/
 gpgcheck=0
 enabled=1
