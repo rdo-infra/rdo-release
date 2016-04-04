@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        liberty
-Release:        2
+Version:        mitaka
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -31,6 +31,9 @@ install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Apr 04 2016 Alan Pevec <apevec AT redhat.com> - mitaka-1
+- Update to Liberty using CloudSIG testing repo
+
 * Wed Oct 21 2015 Alan Pevec <apevec@redhat.com> - liberty-2
 - Liberty GA
 

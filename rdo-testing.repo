@@ -1,5 +1,5 @@
-[openstack-liberty-testing]
-name=OpenStack Liberty Testing
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-liberty/
+[openstack-mitaka-testing]
+name=OpenStack Mitaka Testing
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-mitaka/
 gpgcheck=0
-enabled=0
+enabled=1
