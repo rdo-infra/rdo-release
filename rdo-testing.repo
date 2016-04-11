@@ -2,4 +2,4 @@
 name=OpenStack Mitaka Testing
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-mitaka/
 gpgcheck=0
-enabled=1
+enabled=0
