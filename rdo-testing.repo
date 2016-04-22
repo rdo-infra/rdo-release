@@ -3,3 +3,15 @@ name=OpenStack Mitaka Testing
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-mitaka/
 gpgcheck=0
 enabled=0
+
+[rdo-trunk-mitaka]
+name=OpenStack Mitaka Trunk
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-mitaka/
+gpgcheck=0
+enabled=0
+
+[rdo-trunk-mitaka-tested]
+name=OpenStack Mitaka Trunk Tested
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-mitaka-tested/
+gpgcheck=0
+enabled=0

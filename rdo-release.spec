@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        mitaka
-Release:        2
+Release:        3
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -31,6 +31,9 @@ install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Fri Apr 22 2016 Alan Pevec <apevec AT redhat.com> - mitaka-3
+- Add Mitaka Trunk repositories
+
 * Mon Apr 11 2016 Alan Pevec <apevec AT redhat.com> - mitaka-2
 - Mitaka GA
 
