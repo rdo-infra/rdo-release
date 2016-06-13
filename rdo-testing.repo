@@ -4,12 +4,6 @@ baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-liberty/
 gpgcheck=0
 enabled=0
 
-[rdo-trunk-liberty]
-name=OpenStack Liberty Trunk
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-liberty/
-gpgcheck=0
-enabled=0
-
 [rdo-trunk-liberty-tested]
 name=OpenStack Liberty Trunk Tested
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-liberty-tested/
