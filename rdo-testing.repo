@@ -1,11 +1,11 @@
-[openstack-mitaka-testing]
-name=OpenStack Mitaka Testing
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-mitaka/
+[openstack-newton-testing]
+name=OpenStack Newton Testing
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-newton/
 gpgcheck=0
-enabled=0
+enabled=1
 
-[rdo-trunk-mitaka-tested]
-name=OpenStack Mitaka Trunk Tested
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-mitaka-tested/
+[rdo-trunk-newton-tested]
+name=OpenStack Newton Trunk Tested
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-master-tested/
 gpgcheck=0
-enabled=0
+enabled=1

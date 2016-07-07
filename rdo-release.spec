@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        mitaka
-Release:        5
+Version:        newton
+Release:        0
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -31,8 +31,5 @@ install -Dpm 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
-* Mon Jun 13 2016 Alan Pevec <apevec AT redhat.com> - mitaka-5
-- Add Mitaka Trunk repository
-
-* Mon Apr 11 2016 Alan Pevec <apevec AT redhat.com> - mitaka-2
-- Mitaka GA
+* Thu Jul 7 2016 Alan Pevec <apevec AT redhat.com> - newton-0
+- Add Newton pre-release testing repo

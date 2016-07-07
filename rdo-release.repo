@@ -1,6 +1,6 @@
-[openstack-mitaka]
-name=OpenStack Mitaka Repository
-baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-mitaka/
+[openstack-newton]
+name=OpenStack Newton Repository
+baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-newton/
 gpgcheck=1
-enabled=1
+enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud
