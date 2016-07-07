@@ -1,14 +1,9 @@
 Release RPM Update process
-==============
+==========================
 
-* Do local rpmbuild.
-* If ever need release rpm from elsewhere then copy, then
-* add git tags, and push changes and tags
-* Copy to rdo-stage:openstack-$release/ and there
-
+* Do CBS rpmbuild http://cbs.centos.org/koji/packageinfo?packageID=3212
+* Copy to repos.fedorapeople.org:repos/openstack and there
   * Update openstack-$release/.htaccess
-  * Link from openstack-$release/$dist/
-    (be careful. Person who does final sync to fpo should own the symlink dest file too)
   * On major release, update the base .htaccess file for rdo-release.rpm
 
 NB starting with Liberty, RDO is distributed using CentOS CloudSIG repository
