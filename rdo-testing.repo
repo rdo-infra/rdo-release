@@ -10,9 +10,3 @@ name=OpenStack Mitaka Pending
 baseurl=http://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
 gpgcheck=0
 enabled=0
-
-[rdo-trunk-mitaka-tested]
-name=OpenStack Mitaka Trunk Tested
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-mitaka-tested/
-gpgcheck=0
-enabled=0

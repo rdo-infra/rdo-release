@@ -22,14 +22,14 @@ This package contains the RDO repository
 
 %install
 install -p -d %{buildroot}%{_sysconfdir}/yum.repos.d
-install -p -m 644 %{SOURCE0001} %{buildroot}%{_sysconfdir}/yum.repos.d
-install -p -m 644 %{SOURCE0002} %{buildroot}%{_sysconfdir}/yum.repos.d
-install -p -m 644 %{SOURCE0003} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE3} %{buildroot}%{_sysconfdir}/yum.repos.d
 
 #GPG Keys
 install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
-install -Dpm 644 %{SOURCE0101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
-install -Dpm 644 %{SOURCE0103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
