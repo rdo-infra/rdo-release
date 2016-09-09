@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        newton
-Release:        1
+Release:        2
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Fri Sep 9 2016 Javier Pena <jpena AT redhat.com> - newton-2
+- Set proper gpgkey for Virt SIG repos
+
 * Tue Aug 23 2016 Haïkel Guémar <hguemar@fedoraproject.org> - newton-1
 - Add Virt SIG qemu-kvm-ev repo (RHBZ#1367696)
 
