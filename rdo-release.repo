@@ -2,5 +2,5 @@
 name=OpenStack Newton Repository
 baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-newton/
 gpgcheck=1
-enabled=0
+enabled=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud

@@ -2,10 +2,10 @@
 name=OpenStack Newton Testing
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-newton/
 gpgcheck=0
-enabled=1
+enabled=0
 
 [rdo-trunk-newton-tested]
 name=OpenStack Newton Trunk Tested
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-master-tested/
 gpgcheck=0
-enabled=1
+enabled=0
