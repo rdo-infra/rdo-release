@@ -1,12 +1,12 @@
 Name:           rdo-release
 Version:        newton
-Release:        3
+Release:        4
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
 License:        Apache2
 
-URL:            https://github.com/redhat-openstack/rdo-release
+URL:            https://github.com/rdo-infra/rdo-release
 # repository files
 Source0001:     rdo-release.repo
 Source0002:     rdo-testing.repo
@@ -36,6 +36,10 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Nov 9 2016 David Moreau Simard <dmsimard AT redhat.com> - newton-4
+- Add the pending repository
+- Update the trunk-tested repository baseurl
+
 * Thu Oct 6 2016 Alan Pevec <apevec AT redhat.com> - newton-3
 - Enable release repository
 
@@ -47,4 +51,3 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 * Thu Jul 7 2016 Alan Pevec <apevec AT redhat.com> - newton-0
 - Add Newton pre-release testing repo
-
