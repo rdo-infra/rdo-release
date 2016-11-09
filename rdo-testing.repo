@@ -1,11 +1,18 @@
-[openstack-newton-testing]
-name=OpenStack Newton Testing
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-newton/
+[openstack-ocata-testing]
+name=OpenStack Ocata Testing
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-ocata/
 gpgcheck=0
 enabled=0
 
-[rdo-trunk-newton-tested]
-name=OpenStack Newton Trunk Tested
+[openstack-ocata-pending]
+# The pending repository should only be enabled under specific testing circumstances
+name=OpenStack Ocata Pending
+baseurl=http://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
+gpgcheck=0
+enabled=0
+
+[rdo-trunk-ocata-tested]
+name=OpenStack Ocata Trunk Tested
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-master-tested/
 gpgcheck=0
 enabled=0
