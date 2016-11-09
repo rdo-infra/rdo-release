@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5adbc538_8912dc60",
+        "filename": "rdo-release.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-11-09T23:09:29Z",
+      "side": 1,
+      "message": "Actually this should have been 0 since it\u0027s pre-release. I\u0027ll send fixup.",
+      "revId": "1e0543d10aec12f703aaf4b0ca9f4132d0068b28",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
