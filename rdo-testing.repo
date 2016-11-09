@@ -4,6 +4,13 @@ baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-mitaka/
 gpgcheck=0
 enabled=0
 
+[openstack-mitaka-pending]
+# The pending repository should only be enabled under specific testing circumstances
+name=OpenStack Mitaka Pending
+baseurl=http://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
+gpgcheck=0
+enabled=0
+
 [rdo-trunk-mitaka-tested]
 name=OpenStack Mitaka Trunk Tested
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-mitaka-tested/
