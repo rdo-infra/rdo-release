@@ -1,0 +1,5 @@
+[gerrit]
+host=review.rdoproject.org
+port=29418
+project=rdo-infra/rdo-release
+defaultbranch=liberty-rdo
