@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        ocata
-Release:        1
+Release:        0
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
