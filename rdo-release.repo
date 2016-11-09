@@ -1,6 +1,7 @@
-[openstack-newton]
-name=OpenStack Newton Repository
-baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-newton/
+# Stable release is not yet available
+[openstack-ocata]
+name=OpenStack Ocata Repository
+baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-ocata/
 gpgcheck=1
-enabled=1
+enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud

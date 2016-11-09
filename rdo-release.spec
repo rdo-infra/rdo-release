@@ -1,12 +1,12 @@
 Name:           rdo-release
-Version:        newton
-Release:        3
+Version:        ocata
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
 License:        Apache2
 
-URL:            https://github.com/redhat-openstack/rdo-release
+URL:            https://github.com/rdo-infra/rdo-release
 # repository files
 Source0001:     rdo-release.repo
 Source0002:     rdo-testing.repo
@@ -36,15 +36,7 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
-* Thu Oct 6 2016 Alan Pevec <apevec AT redhat.com> - newton-3
-- Enable release repository
-
-* Fri Sep 9 2016 Javier Pena <jpena AT redhat.com> - newton-2
-- Set proper gpgkey for Virt SIG repos
-
-* Tue Aug 23 2016 Haïkel Guémar <hguemar@fedoraproject.org> - newton-1
-- Add Virt SIG qemu-kvm-ev repo (RHBZ#1367696)
-
-* Thu Jul 7 2016 Alan Pevec <apevec AT redhat.com> - newton-0
-- Add Newton pre-release testing repo
-
+* Wed Nov 9 2016 David Moreau Simard <dmsimard AT redhat.com> - ocata-0
+- First version of the Ocata release RPM
+- No OpenStack stable repositories are available for Ocata:
+  Only trunk-tested and testing repositories are enabled by default
