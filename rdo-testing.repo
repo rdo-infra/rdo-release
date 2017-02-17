@@ -15,6 +15,6 @@ enabled=0
 # rdo-trunk-ocata-tested is enabled by default until Ocata is released
 [rdo-trunk-ocata-tested]
 name=OpenStack Ocata Trunk Tested
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-master-tested/
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-ocata-tested/
 gpgcheck=0
-enabled=1
+enabled=0
