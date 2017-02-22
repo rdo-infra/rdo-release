@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        ocata
-Release:        1
+Release:        2
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wes Feb 22 2017 David Moreau Simard <dmsimard AT redhat.com> - ocata-2
+- First stable release and general availability of RDO Ocata
+
 * Fri Feb 17 2017 David Moreau Simard <dmsimard AT redhat.com> - ocata-1
 - The -testing repository is now self contained: disable the trunk-tested
   repository by default.

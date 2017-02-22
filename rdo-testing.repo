@@ -1,9 +1,8 @@
-# openstack-ocata-testing is enabled by default until Ocata is released
 [openstack-ocata-testing]
 name=OpenStack Ocata Testing
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-ocata/
 gpgcheck=0
-enabled=1
+enabled=0
 
 [openstack-ocata-pending]
 # The pending repository should only be enabled under specific testing circumstances
@@ -12,7 +11,6 @@ baseurl=http://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os
 gpgcheck=0
 enabled=0
 
-# rdo-trunk-ocata-tested is enabled by default until Ocata is released
 [rdo-trunk-ocata-tested]
 name=OpenStack Ocata Trunk Tested
 baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-ocata-tested/
