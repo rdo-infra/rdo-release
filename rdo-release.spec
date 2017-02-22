@@ -36,7 +36,7 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
-* Wes Feb 22 2017 David Moreau Simard <dmsimard AT redhat.com> - ocata-2
+* Wed Feb 22 2017 David Moreau Simard <dmsimard AT redhat.com> - ocata-2
 - First stable release and general availability of RDO Ocata
 
 * Fri Feb 17 2017 David Moreau Simard <dmsimard AT redhat.com> - ocata-1
