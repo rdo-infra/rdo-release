@@ -13,6 +13,6 @@ enabled=0
 
 [rdo-trunk-ocata-tested]
 name=OpenStack Ocata Trunk Tested
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-ocata-tested/
+baseurl=https://trunk.rdoproject.org/centos7-ocata/current-passed-ci/
 gpgcheck=0
 enabled=0
