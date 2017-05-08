@@ -13,6 +13,6 @@ enabled=0
 
 [rdo-trunk-newton-tested]
 name=OpenStack Newton Trunk Tested
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/rdo-trunk-newton-tested/
+baseurl=https://trunk.rdoproject.org/centos7-newton/current-passed-ci/
 gpgcheck=0
 enabled=0

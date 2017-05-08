@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        newton
-Release:        4
+Release:        5
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon May 8 2017 David Moreau Simard <dmsimard AT redhat.com> - newton-5
+- Move the location for the rdo-trunk-ocata-tested repository
+
 * Wed Nov 9 2016 David Moreau Simard <dmsimard AT redhat.com> - newton-4
 - Add the pending repository
 - Update the trunk-tested repository baseurl
