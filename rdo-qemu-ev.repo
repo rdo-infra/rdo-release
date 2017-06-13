@@ -8,6 +8,5 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
 [rdo-qemu-ev-test]
 name=RDO CentOS-7 - QEMU EV Testing
 baseurl=http://buildlogs.centos.org/centos/7/virt/$basearch/kvm-common/
-gpgcheck=1
+gpgcheck=0
 enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
