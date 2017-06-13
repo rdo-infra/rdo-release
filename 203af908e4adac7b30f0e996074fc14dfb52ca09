@@ -45,6 +45,30 @@
       "revId": "203af908e4adac7b30f0e996074fc14dfb52ca09",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_c701193b",
+        "filename": "rdo-qemu-ev.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-06-13T22:36:40Z",
+      "side": 1,
+      "message": "Right, I\u0027ll send fix to ocata-rdo first then do backports.\nLuckily, test repo is disabled by default!",
+      "parentUuid": "9aa7fdbe_07db211c",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 68
+      },
+      "revId": "203af908e4adac7b30f0e996074fc14dfb52ca09",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
