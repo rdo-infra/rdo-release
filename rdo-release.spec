@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        ocata
-Release:        3
+Version:        pike
+Release:        0
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Fri Aug 25 2017 Alan Pevec <apevec AT redhat.com> - pike-0
+- Pre-release RDO Pike repo setup for bootstraping Pike CI
+
 * Mon May 8 2017 David Moreau Simard <dmsimard AT redhat.com> - ocata-3
 - Move the location for the rdo-trunk-ocata-tested repository
 

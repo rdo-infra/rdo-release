@@ -1,6 +1,6 @@
-[openstack-ocata]
-name=OpenStack Ocata Repository
-baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-ocata/
+[openstack-pike]
+name=OpenStack Pike Repository
+baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-pike/
 gpgcheck=1
-enabled=1
+enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud

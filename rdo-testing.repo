@@ -1,18 +1,18 @@
-[openstack-ocata-testing]
-name=OpenStack Ocata Testing
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-ocata/
+[openstack-pike-testing]
+name=OpenStack Pike Testing
+baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-pike/
 gpgcheck=0
 enabled=0
 
-[openstack-ocata-pending]
+[openstack-pike-pending]
 # The pending repository should only be enabled under specific testing circumstances
-name=OpenStack Ocata Pending
+name=OpenStack Pike Pending
 baseurl=http://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
 gpgcheck=0
 enabled=0
 
-[rdo-trunk-ocata-tested]
-name=OpenStack Ocata Trunk Tested
-baseurl=https://trunk.rdoproject.org/centos7-ocata/current-passed-ci/
+[rdo-trunk-pike-tested]
+name=OpenStack Pike Trunk Tested
+baseurl=https://trunk.rdoproject.org/centos7-pike/current-passed-ci/
 gpgcheck=0
 enabled=0
