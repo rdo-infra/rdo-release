@@ -1,13 +1,13 @@
 [openstack-ocata-testing]
 name=OpenStack Ocata Testing
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-ocata/
+baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-ocata/
 gpgcheck=0
 enabled=0
 
 [openstack-ocata-pending]
 # The pending repository should only be enabled under specific testing circumstances
 name=OpenStack Ocata Pending
-baseurl=http://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
+baseurl=https://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
 gpgcheck=0
 enabled=0
 
