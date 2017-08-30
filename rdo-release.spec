@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        pike
-Release:        0
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Aug 30 2017 David Moreau Simard <dmsimard AT redhat.com> - pike-1
+- First stable release and general availability of RDO Pike
+
 * Fri Aug 25 2017 Alan Pevec <apevec AT redhat.com> - pike-0
 - Pre-release RDO Pike repo setup for bootstraping Pike CI
 
