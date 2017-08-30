@@ -1,6 +1,6 @@
 [openstack-pike-testing]
 name=OpenStack Pike Testing
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-pike/
+baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-pike/
 gpgcheck=0
 enabled=0
 
