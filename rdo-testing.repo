@@ -1,13 +1,13 @@
 [openstack-newton-testing]
 name=OpenStack Newton Testing
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-newton/
+baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-newton/
 gpgcheck=0
 enabled=0
 
 [openstack-newton-pending]
 # The pending repository should only be enabled under specific testing circumstances
 name=OpenStack Newton Pending
-baseurl=http://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
+baseurl=https://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
 gpgcheck=0
 enabled=0
 
