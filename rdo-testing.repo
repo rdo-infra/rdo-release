@@ -1,13 +1,13 @@
 [openstack-pike-testing]
 name=OpenStack Pike Testing
-baseurl=http://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-pike/
+baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-pike/
 gpgcheck=0
 enabled=0
 
 [openstack-pike-pending]
 # The pending repository should only be enabled under specific testing circumstances
 name=OpenStack Pike Pending
-baseurl=http://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
+baseurl=https://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
 gpgcheck=0
 enabled=0
 
