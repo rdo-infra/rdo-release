@@ -1,18 +1,11 @@
-[openstack-pike-testing]
-name=OpenStack Pike Testing
-baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-pike/
+[openstack-queens-testing]
+name=OpenStack Queens Testing
+baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-queens/
 gpgcheck=0
-enabled=0
+enabled=1
 
-[openstack-pike-pending]
-# The pending repository should only be enabled under specific testing circumstances
-name=OpenStack Pike Pending
-baseurl=https://cbs.centos.org/repos/cloud7-openstack-common-pending/$basearch/os/
-gpgcheck=0
-enabled=0
-
-[rdo-trunk-pike-tested]
-name=OpenStack Pike Trunk Tested
-baseurl=https://trunk.rdoproject.org/centos7-pike/current-passed-ci/
+[rdo-trunk-queens-tested]
+name=OpenStack Queens Trunk Tested
+baseurl=https://trunk.rdoproject.org/centos7-queens/current-passed-ci/
 gpgcheck=0
 enabled=0

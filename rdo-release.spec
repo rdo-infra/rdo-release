@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        pike
-Release:        1
+Version:        queens
+Release:        0
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Thu Feb 22 2018 Alfredo Moralejo <amoralej AT redhat.com> - queens-0
+- Pre-release RDO Queens repo setup for bootstraping Queens CI
+
 * Wed Aug 30 2017 David Moreau Simard <dmsimard AT redhat.com> - pike-1
 - First stable release and general availability of RDO Pike
 
