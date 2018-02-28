@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        queens
-Release:        0
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Feb 28 2018 Alfredo Moralejo <amoralej AT redhat.com> - queens-1
+- First stable release and general availability of RDO Queens
+
 * Thu Feb 22 2018 Alfredo Moralejo <amoralej AT redhat.com> - queens-0
 - Pre-release RDO Queens repo setup for bootstraping Queens CI
 

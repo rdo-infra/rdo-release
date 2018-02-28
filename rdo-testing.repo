@@ -2,7 +2,7 @@
 name=OpenStack Queens Testing
 baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-queens/
 gpgcheck=0
-enabled=1
+enabled=0
 
 [rdo-trunk-queens-tested]
 name=OpenStack Queens Trunk Tested
