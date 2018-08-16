@@ -93,6 +93,30 @@
       "revId": "4374114bb2893251a1f31787918a5988e999bccb",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_0803fc74",
+        "filename": "rdo-testing.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-08-16T12:52:51Z",
+      "side": 1,
+      "message": "Ok",
+      "parentUuid": "9abe1de1_c8c74444",
+      "range": {
+        "startLine": 3,
+        "startChar": 8,
+        "endLine": 3,
+        "endChar": 77
+      },
+      "revId": "4374114bb2893251a1f31787918a5988e999bccb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
