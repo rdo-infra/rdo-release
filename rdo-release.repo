@@ -1,6 +1,6 @@
-[openstack-queens]
-name=OpenStack Queens Repository
-baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-queens/
+[openstack-rocky]
+name=OpenStack Rocky Repository
+baseurl=http://mirror.centos.org/centos/7/cloud/$basearch/openstack-rocky/
 gpgcheck=1
-enabled=1
+enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud
