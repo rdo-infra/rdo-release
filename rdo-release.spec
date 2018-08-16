@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        queens
-Release:        1
+Version:        rocky
+Release:        0
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Thu Aug 16 2018 Alfredo Moralejo <amoralej AT redhat.com> - rocky-0
+- Pre-release RDO Rocky repo setup for bootstraping Rocky CI
+
 * Wed Feb 28 2018 Alfredo Moralejo <amoralej AT redhat.com> - queens-1
 - First stable release and general availability of RDO Queens
 
