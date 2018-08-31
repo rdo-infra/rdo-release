@@ -1,0 +1,9 @@
+Code-Review+2: Javier Peña <jpena@redhat.com>
+Code-Review+2: Alan Pevec <alan.pevec@redhat.com>
+Workflow+1: Alan Pevec <alan.pevec@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 31 Aug 2018 10:19:13 +0000
+Reviewed-on: https://review.rdoproject.org/r/16087
+Project: rdo-infra/rdo-release
+Branch: refs/heads/rocky-rdo
