@@ -2,7 +2,7 @@
 name=OpenStack Rocky Testing
 baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-rocky/
 gpgcheck=0
-enabled=1
+enabled=0
 
 [rdo-trunk-rocky-tested]
 name=OpenStack Rocky Trunk Tested

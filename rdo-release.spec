@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        rocky
-Release:        0
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Fri Aug 31 2018 Yatin Karel <ykarel AT redhat.com> - rocky-1
+- First stable release and general availability of RDO Rocky
+
 * Thu Aug 16 2018 Alfredo Moralejo <amoralej AT redhat.com> - rocky-0
 - Pre-release RDO Rocky repo setup for bootstraping Rocky CI
 
