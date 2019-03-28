@@ -1,11 +1,11 @@
-[openstack-rocky-testing]
-name=OpenStack Rocky Testing
-baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-rocky/
+[openstack-stein-testing]
+name=OpenStack Stein Testing
+baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-stein/
 gpgcheck=0
-enabled=0
+enabled=1
 
-[rdo-trunk-rocky-tested]
-name=OpenStack Rocky Trunk Tested
-baseurl=https://trunk.rdoproject.org/centos7-rocky/current-passed-ci/
+[rdo-trunk-stein-tested]
+name=OpenStack Stein Trunk Tested
+baseurl=https://trunk.rdoproject.org/centos7-stein/current-passed-ci/
 gpgcheck=0
 enabled=0
