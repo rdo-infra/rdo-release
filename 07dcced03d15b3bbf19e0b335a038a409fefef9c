@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4dcecb08_07b77a28",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-03-28T15:02:47Z",
+      "side": 1,
+      "message": "stein-0",
+      "range": {
+        "startLine": 39,
+        "startChar": 62,
+        "endLine": 39,
+        "endChar": 69
+      },
+      "revId": "07dcced03d15b3bbf19e0b335a038a409fefef9c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
