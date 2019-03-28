@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        rocky
-Release:        1
+Version:        stein
+Release:        0
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Thu Mar 28 2019 Alfredo Moralejo <amoralej AT redhat.com> - stein-0
+- Pre-release RDO Stein repo setup for bootstraping Stein CI
+
 * Fri Aug 31 2018 Yatin Karel <ykarel AT redhat.com> - rocky-1
 - First stable release and general availability of RDO Rocky
 
