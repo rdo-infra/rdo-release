@@ -2,7 +2,7 @@
 name=OpenStack Stein Testing
 baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-stein/
 gpgcheck=0
-enabled=1
+enabled=0
 
 [rdo-trunk-stein-tested]
 name=OpenStack Stein Trunk Tested
