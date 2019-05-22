@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        stein
-Release:        1
+Release:        2
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed May 22 2019 Arun S A G <sagarun AT gmail.com> - stein-2
+- Fix breakage in RHEL
+
 * Tue Apr 30 2019 Alfredo Moralejo <amoralej AT redhat.com> - stein-1
 - first stable release and general availability of RDO Stein
 
