@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        rocky
-Release:        1
+Release:        2
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Thu Sep 19 2019 Alfredo Moralejo <amoralej@redhat.com> - rocky-2
+- Move to use mirrorlist instead of mirror.centos.org.
+
 * Fri Aug 31 2018 Yatin Karel <ykarel AT redhat.com> - rocky-1
 - First stable release and general availability of RDO Rocky
 
