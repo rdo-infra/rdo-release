@@ -1,0 +1,10 @@
+Code-Review+1: Arun S A G <sagarun@gmail.com>
+Code-Review+2: Javier Peña <jpena@redhat.com>
+Code-Review+1: Yatin Karel <ykarel@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Thu, 19 Sep 2019 15:54:28 +0000
+Reviewed-on: https://review.rdoproject.org/r/22393
+Project: rdo-infra/rdo-release
+Branch: refs/heads/stein-rdo
