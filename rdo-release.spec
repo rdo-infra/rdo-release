@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        stein
-Release:        2
+Release:        3
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Thu Sep 19 2019 Alfredo Moralejo <amoralej@redhat.com> - stein-3
+- Move VirtSIG repo to mirrorlist
+
 * Wed May 22 2019 Arun S A G <sagarun AT gmail.com> - stein-2
 - Fix breakage in RHEL
 
