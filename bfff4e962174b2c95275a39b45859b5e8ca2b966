@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6b34b6bd_33c33c53",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-10-07T12:17:50Z",
+      "side": 1,
+      "message": "Train",
+      "range": {
+        "startLine": 40,
+        "startChar": 52,
+        "endLine": 40,
+        "endChar": 57
+      },
+      "revId": "bfff4e962174b2c95275a39b45859b5e8ca2b966",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
