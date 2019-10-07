@@ -1,11 +1,11 @@
-[openstack-stein-testing]
-name=OpenStack Stein Testing
-baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-stein/
+[openstack-train-testing]
+name=OpenStack Train Testing
+baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-train/
 gpgcheck=0
-enabled=0
+enabled=1
 
-[rdo-trunk-stein-tested]
-name=OpenStack Stein Trunk Tested
-baseurl=https://trunk.rdoproject.org/centos7-stein/current-passed-ci/
+[rdo-trunk-train-tested]
+name=OpenStack Train Tested
+baseurl=https://trunk.rdoproject.org/centos7-train/current-passed-ci/
 gpgcheck=0
 enabled=0
