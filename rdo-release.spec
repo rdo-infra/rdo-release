@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        stein
-Release:        3
+Version:        train
+Release:        0
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Oct 07 2019 Alfredo Moralejo <amoralej AT redhat.com> - train-0
+- Pre-release RDO Train repo setup for bootstraping Train CI
+
 * Thu Sep 19 2019 Alfredo Moralejo <amoralej@redhat.com> - stein-3
 - Move VirtSIG repo to mirrorlist
 
