@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e8464b39_8e72af2a",
+        "filename": "rdo-release.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-10-15T05:21:45Z",
+      "side": 1,
+      "message": "this is not working yet.",
+      "range": {
+        "startLine": 4,
+        "startChar": 11,
+        "endLine": 4,
+        "endChar": 92
+      },
+      "revId": "fa6333e1e78435e28549f53859dc83c974a9def0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
