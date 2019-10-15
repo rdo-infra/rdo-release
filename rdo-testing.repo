@@ -2,7 +2,7 @@
 name=OpenStack Train Testing
 baseurl=https://buildlogs.centos.org/centos/7/cloud/$basearch/openstack-train/
 gpgcheck=0
-enabled=1
+enabled=0
 
 [rdo-trunk-train-tested]
 name=OpenStack Train Tested

@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        train
-Release:        0.1
+Release:        1
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -36,6 +36,9 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Tue Oct 15 2019 Yatin Karel <ykarel AT redhat.com> - train-1
+- first stable release and general availability of RDO Train
+
 * Mon Oct 07 2019 Alfredo Moralejo <amoralej AT redhat.com> - train-0.1
 - Fix build which contained wrong repo files.
 
