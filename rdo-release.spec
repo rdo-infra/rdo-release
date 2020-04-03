@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        train
-Release:        1
+Release:        2%{dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -11,9 +11,12 @@ URL:            https://github.com/rdo-infra/rdo-release
 Source0001:     rdo-release.repo
 Source0002:     rdo-testing.repo
 Source0003:     rdo-qemu-ev.repo
+Source0004:     messaging.repo
+Source0005:     advanced-virtualization.repo
 # GPG keys
 Source0101:     RPM-GPG-KEY-CentOS-SIG-Cloud
 Source0103:     RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
+Source0104:     RPM-GPG-KEY-CentOS-SIG-Messaging
 
 BuildArch:      noarch
 
@@ -24,18 +27,28 @@ This package contains the RDO repository
 install -p -d %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
+%if 0%{?rhel} == 7
 install -p -m 644 %{SOURCE3} %{buildroot}%{_sysconfdir}/yum.repos.d
+%endif
+%if 0%{?rhel} == 8
+install -p -m 644 %{SOURCE4} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE5} %{buildroot}%{_sysconfdir}/yum.repos.d
+%endif
 
 #GPG Keys
 install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Fri Apr 03 2020 Alfredo Moralejo <amoralej@redhat.com> - train-2
+- Added repos for CentOS 8
+
 * Tue Oct 15 2019 Yatin Karel <ykarel AT redhat.com> - train-1
 - first stable release and general availability of RDO Train
 
