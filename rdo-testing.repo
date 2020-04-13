@@ -3,9 +3,11 @@ name=OpenStack Train Testing
 baseurl=https://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-train/
 gpgcheck=0
 enabled=0
+module_hotfixes=1
 
 [rdo-trunk-train-tested]
 name=OpenStack Train Tested
 baseurl=https://trunk.rdoproject.org/centos$releasever-train/current-passed-ci/
 gpgcheck=0
 enabled=0
+module_hotfixes=1

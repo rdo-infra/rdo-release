@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        train
-Release:        2%{dist}
+Release:        3%{dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -46,6 +46,9 @@ install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Apr 13 2020 Alfredo Moralejo <amoralej@redhat.com> - train-3
+- Added module_hotfixes=1 as needed for CentOS 8
+
 * Fri Apr 03 2020 Alfredo Moralejo <amoralej@redhat.com> - train-2
 - Added repos for CentOS 8
 
