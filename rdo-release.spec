@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        train
-Release:        3%{dist}
+Version:        ussuri
+Release:        0%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -10,9 +10,8 @@ URL:            https://github.com/rdo-infra/rdo-release
 # repository files
 Source0001:     rdo-release.repo
 Source0002:     rdo-testing.repo
-Source0003:     rdo-qemu-ev.repo
-Source0004:     messaging.repo
-Source0005:     advanced-virtualization.repo
+Source0003:     messaging.repo
+Source0004:     advanced-virtualization.repo
 # GPG keys
 Source0101:     RPM-GPG-KEY-CentOS-SIG-Cloud
 Source0103:     RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
@@ -27,13 +26,8 @@ This package contains the RDO repository
 install -p -d %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
-%if 0%{?rhel} == 7
 install -p -m 644 %{SOURCE3} %{buildroot}%{_sysconfdir}/yum.repos.d
-%endif
-%if 0%{?rhel} == 8
 install -p -m 644 %{SOURCE4} %{buildroot}%{_sysconfdir}/yum.repos.d
-install -p -m 644 %{SOURCE5} %{buildroot}%{_sysconfdir}/yum.repos.d
-%endif
 
 #GPG Keys
 install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
@@ -46,6 +40,9 @@ install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Thu May 07 2020 Yatin Karel <ykarel@redhat.com> - ussuri-0
+- Pre-release RDO Ussuri repo setup for bootstraping Ussuri CI
+
 * Mon Apr 13 2020 Alfredo Moralejo <amoralej@redhat.com> - train-3
 - Added module_hotfixes=1 as needed for CentOS 8
 
