@@ -1,13 +1,13 @@
-[openstack-train-testing]
-name=OpenStack Train Testing
-baseurl=https://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-train/
+[openstack-ussuri-testing]
+name=OpenStack Ussuri Testing
+baseurl=https://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-ussuri/
 gpgcheck=0
-enabled=0
+enabled=1
 module_hotfixes=1
 
-[rdo-trunk-train-tested]
-name=OpenStack Train Tested
-baseurl=https://trunk.rdoproject.org/centos$releasever-train/current-passed-ci/
+[rdo-trunk-ussuri-tested]
+name=OpenStack Ussuri Tested
+baseurl=https://trunk.rdoproject.org/centos$releasever-ussuri/current-passed-ci/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
