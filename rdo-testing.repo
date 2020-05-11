@@ -2,7 +2,7 @@
 name=OpenStack Ussuri Testing
 baseurl=https://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-ussuri/
 gpgcheck=0
-enabled=1
+enabled=0
 module_hotfixes=1
 
 [rdo-trunk-ussuri-tested]

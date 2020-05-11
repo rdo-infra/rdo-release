@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        ussuri
-Release:        0%{?dist}
+Release:        1%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -40,6 +40,9 @@ install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon May 11 2020 Alfredo Moralejo <amoralej@redhat.com> - ussuri-1
+- Enable RDO Ussuri released repo and disable testing one.
+
 * Thu May 07 2020 Yatin Karel <ykarel@redhat.com> - ussuri-0
 - Pre-release RDO Ussuri repo setup for bootstraping Ussuri CI
 
