@@ -1,13 +1,13 @@
-[openstack-ussuri-testing]
-name=OpenStack Ussuri Testing
-baseurl=https://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-ussuri/
+[openstack-victoria-testing]
+name=OpenStack Victoria Testing
+baseurl=https://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-victoria/
 gpgcheck=0
-enabled=0
+enabled=1
 module_hotfixes=1
 
-[rdo-trunk-ussuri-tested]
-name=OpenStack Ussuri Tested
-baseurl=https://trunk.rdoproject.org/centos$releasever-ussuri/current-passed-ci/
+[rdo-trunk-victoria-tested]
+name=OpenStack Victoria Tested
+baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/current-passed-ci/
 gpgcheck=0
 enabled=0
 module_hotfixes=1

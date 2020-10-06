@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        ussuri
-Release:        1%{?dist}
+Version:        victoria
+Release:        0%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -10,14 +10,16 @@ URL:            https://github.com/rdo-infra/rdo-release
 # repository files
 Source0001:     rdo-release.repo
 Source0002:     rdo-testing.repo
-Source0003:     messaging.repo
-Source0004:     advanced-virtualization.repo
 # GPG keys
 Source0101:     RPM-GPG-KEY-CentOS-SIG-Cloud
-Source0103:     RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
-Source0104:     RPM-GPG-KEY-CentOS-SIG-Messaging
 
 BuildArch:      noarch
+
+Requires: centos-release
+Requires: centos-release-advanced-virtualization
+Requires: centos-release-rabbitmq-38
+Requires: centos-release-ceph-nautilus
+Requires: centos-release-nfv-openvswitch
 
 %description
 This package contains the RDO repository
@@ -26,20 +28,19 @@ This package contains the RDO repository
 install -p -d %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
-install -p -m 644 %{SOURCE3} %{buildroot}%{_sysconfdir}/yum.repos.d
-install -p -m 644 %{SOURCE4} %{buildroot}%{_sysconfdir}/yum.repos.d
 
 #GPG Keys
 install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
-install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
-install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Oct 05 2020 Yatin Karel <ykarel@redhat.com> - victoria-0
+- Pre-release RDO Victoria repo setup for bootstraping Victoria CI
+
 * Mon May 11 2020 Alfredo Moralejo <amoralej@redhat.com> - ussuri-1
 - Enable RDO Ussuri released repo and disable testing one.
 
