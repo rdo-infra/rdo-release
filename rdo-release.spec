@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        victoria
-Release:        0%{?dist}
+Release:        1%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -38,6 +38,9 @@ install -Dpm 644 %{SOURCE101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Tue Oct 13 2020 Yatin Karel <ykarel@redhat.com> - victoria-1
+- Enable RDO victoria release repo and disable testing one
+
 * Mon Oct 05 2020 Yatin Karel <ykarel@redhat.com> - victoria-0
 - Pre-release RDO Victoria repo setup for bootstraping Victoria CI
 
