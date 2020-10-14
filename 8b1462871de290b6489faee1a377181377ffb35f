@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "af6e068b_c0d9c821",
+        "filename": "rdo-release.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2020-10-14T07:39:47Z",
+      "side": 1,
+      "message": "even if we take advantage of mirrorlist instead of baseurl, wouldn\u0027t be better to put victoria here to avoid confusion ?",
+      "range": {
+        "startLine": 3,
+        "startChar": 79,
+        "endLine": 3,
+        "endChar": 84
+      },
+      "revId": "8b1462871de290b6489faee1a377181377ffb35f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
