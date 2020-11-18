@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        victoria
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -10,16 +10,18 @@ URL:            https://github.com/rdo-infra/rdo-release
 # repository files
 Source0001:     rdo-release.repo
 Source0002:     rdo-testing.repo
+Source0003:     messaging.repo
+Source0004:     advanced-virtualization.repo
+Source0005:     nfv-openvswitch.repo
+Source0006:     ceph-nautilus.repo
 # GPG keys
 Source0101:     RPM-GPG-KEY-CentOS-SIG-Cloud
+Source0103:     RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
+Source0104:     RPM-GPG-KEY-CentOS-SIG-Messaging
+Source0105:     RPM-GPG-KEY-CentOS-SIG-NFV
+Source0106:     RPM-GPG-KEY-CentOS-SIG-Storage
 
 BuildArch:      noarch
-
-Requires: centos-release
-Requires: centos-release-advanced-virtualization
-Requires: centos-release-rabbitmq-38
-Requires: centos-release-ceph-nautilus
-Requires: centos-release-nfv-openvswitch
 
 %description
 This package contains the RDO repository
@@ -28,16 +30,27 @@ This package contains the RDO repository
 install -p -d %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE3} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE4} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE5} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE6} %{buildroot}%{_sysconfdir}/yum.repos.d
 
 #GPG Keys
 install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE105} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Nov 18 2020 Yatin Karel <ykarel@redhat.com> - victoria-2
+- Re add repos instead of using centos-release rpms
+
 * Tue Oct 13 2020 Yatin Karel <ykarel@redhat.com> - victoria-1
 - Enable RDO victoria release repo and disable testing one
 
