@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        ussuri
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -12,10 +12,12 @@ Source0001:     rdo-release.repo
 Source0002:     rdo-testing.repo
 Source0003:     messaging.repo
 Source0004:     advanced-virtualization.repo
+Source0005:     nfv-openvswitch.repo
 # GPG keys
 Source0101:     RPM-GPG-KEY-CentOS-SIG-Cloud
 Source0103:     RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
 Source0104:     RPM-GPG-KEY-CentOS-SIG-Messaging
+Source0105:     RPM-GPG-KEY-CentOS-SIG-NFV
 
 BuildArch:      noarch
 
@@ -28,18 +30,23 @@ install -p -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE3} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE4} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE5} %{buildroot}%{_sysconfdir}/yum.repos.d
 
 #GPG Keys
 install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE105} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Nov 18 2020 Yatin Karel <ykarel@redhat.com> - ussuri-2
+- Add nfv-openvswitch.repo
+
 * Mon May 11 2020 Alfredo Moralejo <amoralej@redhat.com> - ussuri-1
 - Enable RDO Ussuri released repo and disable testing one.
 
