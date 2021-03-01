@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        ussuri
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -21,6 +21,8 @@ Source0105:     RPM-GPG-KEY-CentOS-SIG-NFV
 
 BuildArch:      noarch
 
+Requires:       /etc/os-release
+
 %description
 This package contains the RDO repository
 
@@ -39,11 +41,30 @@ install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE105} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
+%post
+if [ -f /etc/os-release ]; then
+    source /etc/os-release
+fi
+if [[ $ID == 'centos' && $NAME == *'Stream' ]] || [ $ID != 'centos' ]; then
+    echo "8-stream" > /etc/dnf/vars/cloudsigdist
+else
+    echo "8" > /etc/dnf/vars/cloudsigdist
+fi
+
+%postun
+if [ $1 -eq 0 ] ; then
+    rm -f /etc/dnf/vars/cloudsigdist
+fi
+
+
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Mar 01 2021 Yatin Karel <ykarel@redhat.com> - ussuri-3
+- Add support for c8-stream
+
 * Wed Nov 18 2020 Yatin Karel <ykarel@redhat.com> - ussuri-2
 - Add nfv-openvswitch.repo
 
