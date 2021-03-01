@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "aaa4b1c6_17f67566",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-03-01T10:05:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b6eb8b79_3aafd3b0",
+      "range": {
+        "startLine": 3,
+        "startChar": 16,
+        "endLine": 3,
+        "endChar": 17
+      },
+      "revId": "f6b37b79e00af1f6895da0ff37c6a29b4e909e3d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cb0f036f_19d8ef96",
         "filename": "rdo-release.spec",
         "patchSetId": 1
@@ -72,6 +96,30 @@
     },
     {
       "key": {
+        "uuid": "15742507_d38e3fd9",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-03-01T10:05:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cb0f036f_19d8ef96",
+      "range": {
+        "startLine": 48,
+        "startChar": 11,
+        "endLine": 48,
+        "endChar": 26
+      },
+      "revId": "f6b37b79e00af1f6895da0ff37c6a29b4e909e3d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cbd5ff13_9a8ee872",
         "filename": "rdo-release.spec",
         "patchSetId": 1
@@ -83,6 +131,30 @@
       "writtenOn": "2021-03-01T09:10:57Z",
       "side": 1,
       "message": "This should be $ID",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 69
+      },
+      "revId": "f6b37b79e00af1f6895da0ff37c6a29b4e909e3d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa32467b_5646fb16",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-03-01T10:05:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cbd5ff13_9a8ee872",
       "range": {
         "startLine": 50,
         "startChar": 0,
