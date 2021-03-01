@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "060865eb_2ed61dda",
+        "filename": "rdo-release.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-03-01T12:00:16Z",
+      "side": 1,
+      "message": "Note you need to include this in a conditional or the file will be removed on package upgrade, see Ordering in https://docs.fedoraproject.org/en-US/packaging-guidelines/Scriptlets/\n\nit should be\n\nif [ $1 -eq 0 ]; then\n  rm -f /etc/dnf/vars/cloudsigdist\nfi",
+      "range": {
+        "startLine": 59,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 32
+      },
+      "revId": "9a4d5db9470ecdebb03f3746a0780587bfe38ee0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
