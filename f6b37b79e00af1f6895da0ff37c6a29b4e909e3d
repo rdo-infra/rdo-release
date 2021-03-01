@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "80cd5e08_c1b2fba0",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-03-01T09:02:02Z",
+      "side": 1,
+      "message": "bump release and update changelog when ready",
+      "range": {
+        "startLine": 3,
+        "startChar": 16,
+        "endLine": 3,
+        "endChar": 17
+      },
+      "revId": "f6b37b79e00af1f6895da0ff37c6a29b4e909e3d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
