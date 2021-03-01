@@ -43,6 +43,19 @@ install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE105} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
+%post
+if [ -f /etc/os-release ]; then
+    source /etc/os-release
+fi
+if [[ $ID == 'centos' && $NAME == *'Stream' ]] || [ ID != 'centos' ]; then
+    echo "8-stream" > /etc/dnf/vars/cloudsigdist
+else
+    echo "8" > /etc/dnf/vars/cloudsigdist
+fi
+
+%postun
+rm -f /etc/dnf/vars/cloudsigdist
+
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
