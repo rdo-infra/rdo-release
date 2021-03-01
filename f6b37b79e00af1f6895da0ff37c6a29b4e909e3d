@@ -46,6 +46,52 @@
       "revId": "f6b37b79e00af1f6895da0ff37c6a29b4e909e3d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cb0f036f_19d8ef96",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-03-01T09:10:57Z",
+      "side": 1,
+      "message": "I\u0027d add\n\nRequires: /etc/os-release\n\nTo make sure the required package is installed.",
+      "range": {
+        "startLine": 48,
+        "startChar": 11,
+        "endLine": 48,
+        "endChar": 26
+      },
+      "revId": "f6b37b79e00af1f6895da0ff37c6a29b4e909e3d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cbd5ff13_9a8ee872",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-03-01T09:10:57Z",
+      "side": 1,
+      "message": "This should be $ID",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 69
+      },
+      "revId": "f6b37b79e00af1f6895da0ff37c6a29b4e909e3d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
