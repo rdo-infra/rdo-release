@@ -22,6 +22,30 @@
       "revId": "9a4d5db9470ecdebb03f3746a0780587bfe38ee0",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a34f3e96_817724ee",
+        "filename": "rdo-release.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-03-01T12:56:18Z",
+      "side": 1,
+      "message": "yes right, updated.",
+      "parentUuid": "060865eb_2ed61dda",
+      "range": {
+        "startLine": 59,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 32
+      },
+      "revId": "9a4d5db9470ecdebb03f3746a0780587bfe38ee0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
