@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        train
-Release:        3%{dist}
+Release:        4%{dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -19,6 +19,8 @@ Source0103:     RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
 Source0104:     RPM-GPG-KEY-CentOS-SIG-Messaging
 
 BuildArch:      noarch
+
+Requires:       /etc/os-release
 
 %description
 This package contains the RDO repository
@@ -41,11 +43,33 @@ install -Dpm 644 %{SOURCE101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE103} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
+
+%post
+if [ -f /etc/os-release ]; then
+    source /etc/os-release
+fi
+if [[ $ID == 'centos' && $NAME == *'Stream' ]] || [ $ID != 'centos' ]; then
+    echo "8-stream" > /etc/dnf/vars/cloudsigdist
+elif [[ $VERSION_ID -eq 7 ]]; then
+    echo "7" > /etc/yum/vars/cloudsigdist
+else
+    echo "8" > /etc/dnf/vars/cloudsigdist
+fi
+
+%postun
+if [ $1 -eq 0 ] ; then
+    rm -f /etc/dnf/vars/cloudsigdist
+    rm -f /etc/yum/vars/cloudsigdist
+fi
+
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Mar 01 2021 Yatin Karel <ykarel@redhat.com> - train-4
+- Add support for c8-stream
+
 * Mon Apr 13 2020 Alfredo Moralejo <amoralej@redhat.com> - train-3
 - Added module_hotfixes=1 as needed for CentOS 8
 

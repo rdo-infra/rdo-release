@@ -1,6 +1,6 @@
 [openstack-train-testing]
 name=OpenStack Train Testing
-baseurl=https://buildlogs.centos.org/centos/$releasever/cloud/$basearch/openstack-train/
+baseurl=https://buildlogs.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-train/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
