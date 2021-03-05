@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fdf0fd65_50ec0bc6",
+        "filename": "rdo-release.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-03-05T10:29:01Z",
+      "side": 1,
+      "message": "We are not populating cloud8s-openstack-train-release so we shouldn\u0027t use this for train. I see three options:\n\n1. point to buildlogs even in openstack-train release.\n2. Use $releasever and keep usint /8/ in c8s.\n3. Keep this repo disabled and enabled openstack-train-testing by default.\n4. Populate cloud8s-openstack-train-release\n\nI think i\u0027d go with option 2,  wdyt?",
+      "range": {
+        "startLine": 4,
+        "startChar": 49,
+        "endLine": 4,
+        "endChar": 62
+      },
+      "revId": "faaa4d391d43d19cfe50930b9f5eca312400f22d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
