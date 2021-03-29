@@ -1,118 +1,118 @@
-[openstack-victoria-testing]
-name=OpenStack Victoria Testing
-baseurl=https://buildlogs.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-victoria/
+[openstack-wallaby-testing]
+name=OpenStack wallaby Testing
+baseurl=https://buildlogs.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-wallaby/
 gpgcheck=0
-enabled=0
+enabled=1
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-baremetal]
-name=rdo-trunk-victoria-tested-component-baremetal
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/baremetal/current-tripleo-rdo
-enabled=0
-gpgcheck=0
-module_hotfixes=1
-
-[rdo-trunk-victoria-tested-component-cinder]
-name=rdo-trunk-victoria-tested-component-cinder
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/cinder/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-baremetal]
+name=rdo-trunk-wallaby-tested-component-baremetal
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/baremetal/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-clients]
-name=rdo-trunk-victoria-tested-component-clients
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/clients/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-cinder]
+name=rdo-trunk-wallaby-tested-component-cinder
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/cinder/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-cloudops]
-name=rdo-trunk-victoria-tested-component-cloudops
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/cloudops/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-clients]
+name=rdo-trunk-wallaby-tested-component-clients
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/clients/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-common]
-name=rdo-trunk-victoria-tested-component-common
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/common/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-cloudops]
+name=rdo-trunk-wallaby-tested-component-cloudops
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/cloudops/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-compute]
-name=rdo-trunk-victoria-tested-component-compute
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/compute/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-common]
+name=rdo-trunk-wallaby-tested-component-common
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/common/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-glance]
-name=rdo-trunk-victoria-tested-component-glance
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/glance/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-compute]
+name=rdo-trunk-wallaby-tested-component-compute
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/compute/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-manila]
-name=rdo-trunk-victoria-tested-component-manila
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/manila/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-glance]
+name=rdo-trunk-wallaby-tested-component-glance
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/glance/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-network]
-name=rdo-trunk-victoria-tested-component-network
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/network/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-manila]
+name=rdo-trunk-wallaby-tested-component-manila
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/manila/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-octavia]
-name=rdo-trunk-victoria-tested-component-octavia
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/octavia/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-network]
+name=rdo-trunk-wallaby-tested-component-network
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/network/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-security]
-name=rdo-trunk-victoria-tested-component-security
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/security/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-octavia]
+name=rdo-trunk-wallaby-tested-component-octavia
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/octavia/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-swift]
-name=rdo-trunk-victoria-tested-component-swift
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/swift/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-security]
+name=rdo-trunk-wallaby-tested-component-security
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/security/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-tempest]
-name=rdo-trunk-victoria-tested-component-tempest
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/tempest/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-swift]
+name=rdo-trunk-wallaby-tested-component-swift
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/swift/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-tripleo]
-name=rdo-trunk-victoria-tested-component-tripleo
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/tripleo/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-tempest]
+name=rdo-trunk-wallaby-tested-component-tempest
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/tempest/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-ui]
-name=rdo-trunk-victoria-tested-component-ui
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/ui/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-tripleo]
+name=rdo-trunk-wallaby-tested-component-tripleo
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/tripleo/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-victoria-tested-component-validation]
-name=rdo-trunk-victoria-tested-component-validation
-baseurl=https://trunk.rdoproject.org/centos$releasever-victoria/component/validation/current-tripleo-rdo
+[rdo-trunk-wallaby-tested-component-ui]
+name=rdo-trunk-wallaby-tested-component-ui
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/ui/current-tripleo-rdo
+enabled=0
+gpgcheck=0
+module_hotfixes=1
+
+[rdo-trunk-wallaby-tested-component-validation]
+name=rdo-trunk-wallaby-tested-component-validation
+baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/validation/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
