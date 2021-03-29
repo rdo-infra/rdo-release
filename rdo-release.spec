@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        victoria
-Release:        3%{?dist}
+Version:        wallaby
+Release:        0%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -65,6 +65,9 @@ fi
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Thu Apr 01 2021 Joel Capitao <jcapitao@redhat.com> - wallaby-0
+- Pre-release RDO Wallaby repo setup for bootstraping Wallaby CI
+
 * Mon Mar 01 2021 Yatin Karel <ykarel@redhat.com> - victoria-3
 - Add support for c8-stream
 
