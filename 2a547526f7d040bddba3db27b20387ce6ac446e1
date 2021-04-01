@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aa86fdb7_5d5c6e1b",
+        "filename": "advanced-virtualization.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-04-01T14:28:47Z",
+      "side": 1,
+      "message": "this would be a bold step to switch this to c8-stream repos along with initial bootsrap, if we get lucky it can paas with it. as we are not yet testing it in other master jobs, may be do this switch later once we start testing it in other master and wallaby jobs?",
+      "range": {
+        "startLine": 3,
+        "startChar": 70,
+        "endLine": 3,
+        "endChar": 82
+      },
+      "revId": "2a547526f7d040bddba3db27b20387ce6ac446e1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "316c96e5_f5414ddd",
+        "filename": "advanced-virtualization.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-04-01T14:28:47Z",
+      "side": 1,
+      "message": "also this is c8-stream specific path so would not work for c8, but since we shipping only for c8-stream this should not be an issue for now",
+      "range": {
+        "startLine": 4,
+        "startChar": 83,
+        "endLine": 4,
+        "endChar": 107
+      },
+      "revId": "2a547526f7d040bddba3db27b20387ce6ac446e1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "271b1826_7cb2864d",
+        "filename": "nfv-openvswitch.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-04-01T14:28:47Z",
+      "side": 1,
+      "message": "update here as well.",
+      "range": {
+        "startLine": 3,
+        "startChar": 42,
+        "endLine": 3,
+        "endChar": 52
+      },
+      "revId": "2a547526f7d040bddba3db27b20387ce6ac446e1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f84e889_356fcc7b",
+        "filename": "rdo-testing.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-04-01T14:28:47Z",
+      "side": 1,
+      "message": "Wallaby",
+      "range": {
+        "startLine": 2,
+        "startChar": 15,
+        "endLine": 2,
+        "endChar": 22
+      },
+      "revId": "2a547526f7d040bddba3db27b20387ce6ac446e1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
