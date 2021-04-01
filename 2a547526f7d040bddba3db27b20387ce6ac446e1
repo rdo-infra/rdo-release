@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9461a025_578f45ab",
+        "filename": "advanced-virtualization.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2021-04-01T15:52:20Z",
+      "side": 1,
+      "message": "Right, we haven\u0027t relied on CS8 virt repo yet as it appeared lately (2021-03-17). We\u0027ll switch later",
+      "parentUuid": "aa86fdb7_5d5c6e1b",
+      "range": {
+        "startLine": 3,
+        "startChar": 70,
+        "endLine": 3,
+        "endChar": 82
+      },
+      "revId": "2a547526f7d040bddba3db27b20387ce6ac446e1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "316c96e5_f5414ddd",
         "filename": "advanced-virtualization.repo",
         "patchSetId": 1
@@ -71,6 +95,30 @@
     },
     {
       "key": {
+        "uuid": "5f12db06_0ca4f72f",
+        "filename": "nfv-openvswitch.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2021-04-01T15:52:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "271b1826_7cb2864d",
+      "range": {
+        "startLine": 3,
+        "startChar": 42,
+        "endLine": 3,
+        "endChar": 52
+      },
+      "revId": "2a547526f7d040bddba3db27b20387ce6ac446e1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6f84e889_356fcc7b",
         "filename": "rdo-testing.repo",
         "patchSetId": 1
@@ -91,6 +139,30 @@
       "revId": "2a547526f7d040bddba3db27b20387ce6ac446e1",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1cbc37b4_cf6a0900",
+        "filename": "rdo-testing.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2021-04-01T15:52:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f84e889_356fcc7b",
+      "range": {
+        "startLine": 2,
+        "startChar": 15,
+        "endLine": 2,
+        "endChar": 22
+      },
+      "revId": "2a547526f7d040bddba3db27b20387ce6ac446e1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
