@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        wallaby
-Release:        0%{?dist}
+Release:        1%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -65,6 +65,9 @@ fi
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Fri Apr 09 2021 Yatin Karel <ykarel@redhat.com> - wallaby-1
+- Enable RDO wallaby release repo and disable testing one
+
 * Thu Apr 01 2021 Joel Capitao <jcapitao@redhat.com> - wallaby-0
 - Pre-release RDO Wallaby repo setup for bootstraping Wallaby CI
 

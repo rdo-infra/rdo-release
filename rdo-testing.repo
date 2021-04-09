@@ -2,7 +2,7 @@
 name=OpenStack Wallaby Testing
 baseurl=https://buildlogs.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-wallaby/
 gpgcheck=0
-enabled=1
+enabled=0
 module_hotfixes=1
 
 [rdo-trunk-wallaby-tested-component-baremetal]
