@@ -1,118 +1,118 @@
-[openstack-wallaby-testing]
-name=OpenStack Wallaby Testing
-baseurl=https://buildlogs.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-wallaby/
+[openstack-xena-testing]
+name=OpenStack Xena Testing
+baseurl=https://buildlogs.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-xena/
 gpgcheck=0
-enabled=0
+enabled=1
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-baremetal]
-name=rdo-trunk-wallaby-tested-component-baremetal
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/baremetal/current-tripleo-rdo
-enabled=0
-gpgcheck=0
-module_hotfixes=1
-
-[rdo-trunk-wallaby-tested-component-cinder]
-name=rdo-trunk-wallaby-tested-component-cinder
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/cinder/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-baremetal]
+name=rdo-trunk-xena-tested-component-baremetal
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/baremetal/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-clients]
-name=rdo-trunk-wallaby-tested-component-clients
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/clients/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-cinder]
+name=rdo-trunk-xena-tested-component-cinder
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/cinder/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-cloudops]
-name=rdo-trunk-wallaby-tested-component-cloudops
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/cloudops/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-clients]
+name=rdo-trunk-xena-tested-component-clients
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/clients/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-common]
-name=rdo-trunk-wallaby-tested-component-common
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/common/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-cloudops]
+name=rdo-trunk-xena-tested-component-cloudops
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/cloudops/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-compute]
-name=rdo-trunk-wallaby-tested-component-compute
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/compute/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-common]
+name=rdo-trunk-xena-tested-component-common
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/common/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-glance]
-name=rdo-trunk-wallaby-tested-component-glance
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/glance/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-compute]
+name=rdo-trunk-xena-tested-component-compute
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/compute/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-manila]
-name=rdo-trunk-wallaby-tested-component-manila
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/manila/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-glance]
+name=rdo-trunk-xena-tested-component-glance
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/glance/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-network]
-name=rdo-trunk-wallaby-tested-component-network
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/network/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-manila]
+name=rdo-trunk-xena-tested-component-manila
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/manila/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-octavia]
-name=rdo-trunk-wallaby-tested-component-octavia
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/octavia/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-network]
+name=rdo-trunk-xena-tested-component-network
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/network/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-security]
-name=rdo-trunk-wallaby-tested-component-security
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/security/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-octavia]
+name=rdo-trunk-xena-tested-component-octavia
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/octavia/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-swift]
-name=rdo-trunk-wallaby-tested-component-swift
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/swift/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-security]
+name=rdo-trunk-xena-tested-component-security
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/security/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-tempest]
-name=rdo-trunk-wallaby-tested-component-tempest
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/tempest/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-swift]
+name=rdo-trunk-xena-tested-component-swift
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/swift/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-tripleo]
-name=rdo-trunk-wallaby-tested-component-tripleo
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/tripleo/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-tempest]
+name=rdo-trunk-xena-tested-component-tempest
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/tempest/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-ui]
-name=rdo-trunk-wallaby-tested-component-ui
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/ui/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-tripleo]
+name=rdo-trunk-xena-tested-component-tripleo
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/tripleo/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-wallaby-tested-component-validation]
-name=rdo-trunk-wallaby-tested-component-validation
-baseurl=https://trunk.rdoproject.org/centos$releasever-wallaby/component/validation/current-tripleo-rdo
+[rdo-trunk-xena-tested-component-ui]
+name=rdo-trunk-xena-tested-component-ui
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/ui/current-tripleo-rdo
+enabled=0
+gpgcheck=0
+module_hotfixes=1
+
+[rdo-trunk-xena-tested-component-validation]
+name=rdo-trunk-xena-tested-component-validation
+baseurl=https://trunk.rdoproject.org/centos$releasever-xena/component/validation/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1

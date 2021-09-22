@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        wallaby
-Release:        1%{?dist}
+Version:        xena
+Release:        0%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -13,7 +13,7 @@ Source0002:     rdo-testing.repo
 Source0003:     messaging.repo
 Source0004:     advanced-virtualization.repo
 Source0005:     nfv-openvswitch.repo
-Source0006:     ceph-nautilus.repo
+Source0006:     ceph-pacific.repo
 # GPG keys
 Source0101:     RPM-GPG-KEY-CentOS-SIG-Cloud
 Source0103:     RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
@@ -65,6 +65,9 @@ fi
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Sep 22 2021 Joel Capitao <jcapitao@redhat.com> - xena-0
+- Pre-release RDO Xena repo setup for bootstraping Xena CI
+
 * Fri Apr 09 2021 Yatin Karel <ykarel@redhat.com> - wallaby-1
 - Enable RDO wallaby release repo and disable testing one
 

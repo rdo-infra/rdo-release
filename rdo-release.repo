@@ -1,8 +1,8 @@
-[openstack-wallaby]
-name=OpenStack Wallaby Repository
-#baseurl=http://mirror.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-wallaby/
-mirrorlist=http://mirrorlist.centos.org/?release=$cloudsigdist&arch=$basearch&repo=cloud-openstack-wallaby
+[openstack-xena]
+name=OpenStack Xena Repository
+#baseurl=http://mirror.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-xena/
+mirrorlist=http://mirrorlist.centos.org/?release=$cloudsigdist&arch=$basearch&repo=cloud-openstack-xena
 gpgcheck=1
-enabled=1
+enabled=0
 module_hotfixes=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud
