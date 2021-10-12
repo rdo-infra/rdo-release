@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        xena
-Release:        0%{?dist}
+Release:        1%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -65,6 +65,9 @@ fi
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Tue Oct 12 2021 Joel Capitao <jcapitao@redhat.com> - xena-1
+- Enable RDO xena release repo and disable testing one
+
 * Wed Sep 22 2021 Joel Capitao <jcapitao@redhat.com> - xena-0
 - Pre-release RDO Xena repo setup for bootstraping Xena CI
 
