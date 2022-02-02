@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "829f7e7a_b6e01ee1",
+        "filename": "rdo-release.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-02-02T16:00:00Z",
+      "side": 1,
+      "message": "We can remove this too",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 31
+      },
+      "revId": "440d91d1b1d2af11a0b7c235deb27ab754296238",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
