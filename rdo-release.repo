@@ -1,7 +1,7 @@
 [openstack-ussuri]
 name=OpenStack Ussuri Repository
-#baseurl=http://mirror.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-ussuri/
-mirrorlist=http://mirrorlist.centos.org/?release=$cloudsigdist&arch=$basearch&repo=cloud-openstack-ussuri
+#baseurl=http://mirror.centos.org/centos/$stream/cloud/$basearch/openstack-ussuri/
+mirrorlist=http://mirrorlist.centos.org/?release=$stream&arch=$basearch&repo=cloud-openstack-ussuri
 gpgcheck=1
 enabled=1
 module_hotfixes=1
