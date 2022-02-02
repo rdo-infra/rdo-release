@@ -1,7 +1,7 @@
 [openstack-xena]
 name=OpenStack Xena Repository
-#baseurl=http://mirror.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-xena/
-mirrorlist=http://mirrorlist.centos.org/?release=$cloudsigdist&arch=$basearch&repo=cloud-openstack-xena
+#baseurl=http://mirror.centos.org/centos/$stream/cloud/$basearch/openstack-xena/
+mirrorlist=http://mirrorlist.centos.org/?release=$stream&arch=$basearch&repo=cloud-openstack-xena
 gpgcheck=1
 enabled=1
 module_hotfixes=1

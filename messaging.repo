@@ -1,7 +1,7 @@
 [centos-rabbitmq-38]
 name=CentOS-8 - RabbitMQ 38
-#baseurl=http://mirror.centos.org/centos/$releasever/messaging/$basearch/rabbitmq-38
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=messaging-rabbitmq-38
+#baseurl=http://mirror.centos.org/centos/$stream/messaging/$basearch/rabbitmq-38
+mirrorlist=http://mirrorlist.centos.org/?release=$stream&arch=$basearch&repo=messaging-rabbitmq-38
 gpgcheck=1
 enabled=1
 module_hotfixes=1
@@ -9,7 +9,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Messaging
 
 [centos-rabbitmq-38-test]
 name=CentOS-8 - RabbitMQ 38 Testing
-baseurl=https://buildlogs.centos.org/centos/$releasever/messaging/$basearch/rabbitmq-38/
+baseurl=https://buildlogs.centos.org/centos/$stream/messaging/$basearch/rabbitmq-38/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
