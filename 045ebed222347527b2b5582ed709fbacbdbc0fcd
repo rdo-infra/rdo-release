@@ -1,0 +1,8 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 02 Feb 2022 07:38:24 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/rdo-infra/rdo-release/+/38905
+Project: rdo-infra/rdo-release
+Branch: refs/heads/xena-rdo
