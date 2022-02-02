@@ -1,6 +1,6 @@
 [openstack-ussuri-testing]
 name=OpenStack Ussuri Testing
-baseurl=https://buildlogs.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-ussuri/
+baseurl=https://buildlogs.centos.org/centos/$stream/cloud/$basearch/openstack-ussuri/
 gpgcheck=0
 enabled=0
 module_hotfixes=1

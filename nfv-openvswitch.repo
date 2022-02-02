@@ -1,15 +1,15 @@
 [centos-nfv-openvswitch]
-name=CentOS-$releasever - NFV OpenvSwitch
-#baseurl=http://mirror.centos.org/centos/$releasever/nfv/$basearch/openvswitch-2/
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=nfv-openvswitch-2
+name=CentOS-$stream - NFV OpenvSwitch
+#baseurl=http://mirror.centos.org/centos/$stream/nfv/$basearch/openvswitch-2/
+mirrorlist=http://mirrorlist.centos.org/?release=$stream&arch=$basearch&repo=nfv-openvswitch-2
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-NFV
 module_hotfixes=1
 
 [centos-nfv-openvswitch-testing]
-name=CentOS-$releasever - NFV OpenvSwitch Testing
-baseurl=http://buildlogs.centos.org/centos/$releasever/nfv/$basearch/openvswitch-2/
+name=CentOS-$stream - NFV OpenvSwitch Testing
+baseurl=http://buildlogs.centos.org/centos/$stream/nfv/$basearch/openvswitch-2/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
