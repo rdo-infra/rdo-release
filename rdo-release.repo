@@ -1,7 +1,7 @@
 [openstack-victoria]
 name=OpenStack Victoria Repository
-#baseurl=http://mirror.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-victoria/
-mirrorlist=http://mirrorlist.centos.org/?release=$cloudsigdist&arch=$basearch&repo=cloud-openstack-victoria
+#baseurl=http://mirror.centos.org/centos/$stream/cloud/$basearch/openstack-victoria/
+mirrorlist=http://mirrorlist.centos.org/?release=$stream&arch=$basearch&repo=cloud-openstack-victoria
 gpgcheck=1
 enabled=1
 module_hotfixes=1

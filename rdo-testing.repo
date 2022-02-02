@@ -1,6 +1,6 @@
 [openstack-victoria-testing]
 name=OpenStack Victoria Testing
-baseurl=https://buildlogs.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-victoria/
+baseurl=https://buildlogs.centos.org/centos/$stream/cloud/$basearch/openstack-victoria/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
