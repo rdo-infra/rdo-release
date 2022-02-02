@@ -1,7 +1,7 @@
 [openstack-wallaby]
 name=OpenStack Wallaby Repository
-#baseurl=http://mirror.centos.org/centos/$cloudsigdist/cloud/$basearch/openstack-wallaby/
-mirrorlist=http://mirrorlist.centos.org/?release=$cloudsigdist&arch=$basearch&repo=cloud-openstack-wallaby
+#baseurl=http://mirror.centos.org/centos/$stream/cloud/$basearch/openstack-wallaby/
+mirrorlist=http://mirrorlist.centos.org/?release=$stream&arch=$basearch&repo=cloud-openstack-wallaby
 gpgcheck=1
 enabled=1
 module_hotfixes=1

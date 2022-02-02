@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        wallaby
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -23,8 +23,6 @@ Source0106:     RPM-GPG-KEY-CentOS-SIG-Storage
 
 BuildArch:      noarch
 
-Requires:       /etc/os-release
-
 %description
 This package contains the RDO repository
 
@@ -45,26 +43,14 @@ install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE105} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
-%post
-if [ -f /etc/os-release ]; then
-    source /etc/os-release
-fi
-if [[ $ID == 'centos' && $NAME == *'Stream' ]] || [ $ID != 'centos' ]; then
-    echo "8-stream" > /etc/dnf/vars/cloudsigdist
-else
-    echo "8" > /etc/dnf/vars/cloudsigdist
-fi
-
-%postun
-if [ $1 -eq 0 ] ; then
-    rm -f /etc/dnf/vars/cloudsigdist
-fi
-
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Feb 02 2022 Alfredo Moralejo <amoralej@redhat.com> - wallaby-2
+- Move repos to CentOS Stream 8
+
 * Fri Apr 09 2021 Yatin Karel <ykarel@redhat.com> - wallaby-1
 - Enable RDO wallaby release repo and disable testing one
 
