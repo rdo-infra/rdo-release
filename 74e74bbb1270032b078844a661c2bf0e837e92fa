@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccd3a63b_ca611716",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2022-02-02T10:44:07Z",
+      "side": 1,
+      "message": "some typos rest looks good",
+      "revId": "74e74bbb1270032b078844a661c2bf0e837e92fa",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a666338_a1fa9d8f",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2022-02-02T10:44:07Z",
+      "side": 1,
+      "message": "2022",
+      "range": {
+        "startLine": 51,
+        "startChar": 16,
+        "endLine": 51,
+        "endChar": 17
+      },
+      "revId": "74e74bbb1270032b078844a661c2bf0e837e92fa",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4968624_a5f24157",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2022-02-02T10:44:07Z",
+      "side": 1,
+      "message": "redhat",
+      "range": {
+        "startLine": 51,
+        "startChar": 45,
+        "endLine": 51,
+        "endChar": 51
+      },
+      "revId": "74e74bbb1270032b078844a661c2bf0e837e92fa",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
