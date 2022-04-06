@@ -1,0 +1,8 @@
+[openstack-yoga]
+name=OpenStack Yoga Repository
+#baseurl=http://mirror.stream.centos.org/SIGs/$releasever-stream/cloud/$basearch/openstack-yoga/
+metalink=https://mirrors.centos.org/metalink?repo=centos-cloud-sig-openstack-yoga-$releasever-stream&arch=$basearch&protocol=https,http
+gpgcheck=1
+enabled=1
+module_hotfixes=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud
