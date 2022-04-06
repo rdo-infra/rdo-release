@@ -1,7 +1,7 @@
-[openstack-xena]
-name=OpenStack Xena Repository
-#baseurl=http://mirror.centos.org/centos/$stream/cloud/$basearch/openstack-xena/
-mirrorlist=http://mirrorlist.centos.org/?release=$stream&arch=$basearch&repo=cloud-openstack-xena
+[openstack-yoga]
+name=OpenStack Yoga Repository
+#baseurl=http://mirror.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-yoga/
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever-stream&arch=$basearch&repo=cloud-openstack-yoga
 gpgcheck=1
 enabled=1
 module_hotfixes=1
