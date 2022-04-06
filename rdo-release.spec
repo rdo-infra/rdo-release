@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        xena
-Release:        2%{?dist}
+Version:        yoga
+Release:        1%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -14,6 +14,10 @@ Source0003:     messaging.repo
 Source0004:     advanced-virtualization.repo
 Source0005:     nfv-openvswitch.repo
 Source0006:     ceph-pacific.repo
+Source0007:     rdo-release-cs9.repo
+Source0008:     messaging-cs9.repo
+Source0009:     nfv-openvswitch-cs9.repo
+Source0010:     ceph-pacific-cs9.repo
 # GPG keys
 Source0101:     RPM-GPG-KEY-CentOS-SIG-Cloud
 Source0103:     RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
@@ -27,6 +31,7 @@ BuildArch:      noarch
 This package contains the RDO repository
 
 %install
+%if %{rhel} == 8
 install -p -d %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
@@ -34,6 +39,16 @@ install -p -m 644 %{SOURCE3} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE4} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE5} %{buildroot}%{_sysconfdir}/yum.repos.d
 install -p -m 644 %{SOURCE6} %{buildroot}%{_sysconfdir}/yum.repos.d
+%endif
+
+%if %{rhel} == 9
+install -p -d %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/yum.repos.d
+install -p -m 644 %{SOURCE7} %{buildroot}%{_sysconfdir}/yum.repos.d/rdo-release.repo
+install -p -m 644 %{SOURCE8} %{buildroot}%{_sysconfdir}/yum.repos.d/messaging.repo
+install -p -m 644 %{SOURCE9} %{buildroot}%{_sysconfdir}/yum.repos.d/nfv-openvswitch.repo
+install -p -m 644 %{SOURCE10} %{buildroot}%{_sysconfdir}/yum.repos.d/ceph-pacific.repo
+%endif
 
 #GPG Keys
 install -p -d %{buildroot}%{_sysconfdir}/pki/rpm-gpg
@@ -48,6 +63,9 @@ install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Tue Apr 05 2022 Alfredo Moralejo <amoralej@redhat.com> - yoga-1
+- First release for RDO Yoga
+
 * Wed Feb 02 2022 Yatin Karel <ykarel@redhat.com> - xena-2
 - Move Repos to CentOS Stream 8
 
