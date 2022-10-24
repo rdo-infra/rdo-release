@@ -24,6 +24,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5bce3cdf_b233e023",
+        "filename": "ceph-pacific.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-10-24T13:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6c0615f_779f1229",
+      "range": {
+        "startLine": 4,
+        "startChar": 74,
+        "endLine": 4,
+        "endChar": 81
+      },
+      "revId": "d59b49b5bf65b77681d1c5a7670c5e745b65293f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "60b43282_57d15547",
@@ -37,6 +61,30 @@
       "writtenOn": "2022-10-24T13:09:25Z",
       "side": 1,
       "message": "quincy",
+      "range": {
+        "startLine": 15,
+        "startChar": 21,
+        "endLine": 15,
+        "endChar": 28
+      },
+      "revId": "d59b49b5bf65b77681d1c5a7670c5e745b65293f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77d1c91a_ce7205b2",
+        "filename": "rdo-release.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-10-24T13:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "60b43282_57d15547",
       "range": {
         "startLine": 15,
         "startChar": 21,
