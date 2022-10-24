@@ -1,9 +1,0 @@
-[advanced-virtualization]
-name=CentOS-8 - Advanced Virtualization
-#baseurl=http://mirror.centos.org/centos/$releasever-stream/virt/$basearch/advancedvirt-common
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever-stream&arch=$basearch&repo=virt-advancedvirt-common
-gpgcheck=1
-enabled=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Virtualization-RDO
-module_hotfixes=1
-

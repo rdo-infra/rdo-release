@@ -1,7 +1,7 @@
 [centos-nfv-openvswitch]
 name=CentOS-$releasever - NFV OpenvSwitch
 #baseurl=http://mirror.centos.org/centos/$releasever-stream/nfv/$basearch/openvswitch-2/
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever-stream&arch=$basearch&repo=nfv-openvswitch-2
+metalink=https://mirrors.centos.org/metalink?repo=centos-nfv-sig-openvswitch-2-$releasever-stream&arch=$basearch&protocol=https,http
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-NFV
