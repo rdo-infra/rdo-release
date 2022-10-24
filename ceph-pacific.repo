@@ -1,7 +1,7 @@
 [ceph-pacific]
-name=CentOS-8 - Ceph Pacific
+name=CentOS-9 - Ceph Pacific
 #baseurl=http://mirror.centos.org/centos/$releasever-stream/storage/$basearch/ceph-pacific
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever-stream&arch=$basearch&repo=storage-ceph-pacific
+metalink=https://mirrors.centos.org/metalink?repo=centos-storage-sig-ceph-pacific-$releasever-stream&arch=$basearch&protocol=https,http
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
