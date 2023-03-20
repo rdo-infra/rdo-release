@@ -1,118 +1,118 @@
-[openstack-zed-testing]
-name=OpenStack Zed Testing
-baseurl=https://buildlogs.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-zed/
+[openstack-antelope-testing]
+name=OpenStack Antelope Testing
+baseurl=https://buildlogs.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-antelope/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-baremetal]
-name=rdo-trunk-zed-tested-component-baremetal
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/baremetal/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-baremetal]
+name=rdo-trunk-antelope-tested-component-baremetal
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/baremetal/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-cinder]
-name=rdo-trunk-zed-tested-component-cinder
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/cinder/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-cinder]
+name=rdo-trunk-antelope-tested-component-cinder
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/cinder/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-clients]
-name=rdo-trunk-zed-tested-component-clients
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/clients/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-clients]
+name=rdo-trunk-antelope-tested-component-clients
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/clients/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-cloudops]
-name=rdo-trunk-zed-tested-component-cloudops
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/cloudops/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-cloudops]
+name=rdo-trunk-antelope-tested-component-cloudops
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/cloudops/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-common]
-name=rdo-trunk-zed-tested-component-common
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/common/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-common]
+name=rdo-trunk-antelope-tested-component-common
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/common/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-compute]
-name=rdo-trunk-zed-tested-component-compute
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/compute/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-compute]
+name=rdo-trunk-antelope-tested-component-compute
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/compute/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-glance]
-name=rdo-trunk-zed-tested-component-glance
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/glance/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-glance]
+name=rdo-trunk-antelope-tested-component-glance
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/glance/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-manila]
-name=rdo-trunk-zed-tested-component-manila
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/manila/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-manila]
+name=rdo-trunk-antelope-tested-component-manila
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/manila/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-network]
-name=rdo-trunk-zed-tested-component-network
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/network/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-network]
+name=rdo-trunk-antelope-tested-component-network
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/network/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-octavia]
-name=rdo-trunk-zed-tested-component-octavia
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/octavia/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-octavia]
+name=rdo-trunk-antelope-tested-component-octavia
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/octavia/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-security]
-name=rdo-trunk-zed-tested-component-security
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/security/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-security]
+name=rdo-trunk-antelope-tested-component-security
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/security/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-swift]
-name=rdo-trunk-zed-tested-component-swift
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/swift/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-swift]
+name=rdo-trunk-antelope-tested-component-swift
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/swift/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-tempest]
-name=rdo-trunk-zed-tested-component-tempest
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/tempest/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-tempest]
+name=rdo-trunk-antelope-tested-component-tempest
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/tempest/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-tripleo]
-name=rdo-trunk-zed-tested-component-tripleo
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/tripleo/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-tripleo]
+name=rdo-trunk-antelope-tested-component-tripleo
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/tripleo/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-ui]
-name=rdo-trunk-zed-tested-component-ui
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/ui/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-ui]
+name=rdo-trunk-antelope-tested-component-ui
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/ui/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-zed-tested-component-validation]
-name=rdo-trunk-zed-tested-component-validation
-baseurl=https://trunk.rdoproject.org/centos$releasever-zed/component/validation/current-tripleo-rdo
+[rdo-trunk-antelope-tested-component-validation]
+name=rdo-trunk-antelope-tested-component-validation
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/validation/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1

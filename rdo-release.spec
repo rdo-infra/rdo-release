@@ -1,5 +1,5 @@
 Name:           rdo-release
-Version:        zed
+Version:        antelope
 Release:        1%{?dist}
 Summary:        RDO repository configuration
 
@@ -44,6 +44,9 @@ install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Mar 20 2023 Joel Capitao <jcapitao@redhat.com> - antelope-1
+- First release for RDO Antelope
+
 * Mon Oct 24 2022 Joel Capitao <jcapitao@redhat.com> - zed-1
 - First release for RDO Zed
 
