@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        zed
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -44,6 +44,9 @@ install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Fri Apr 14 2023 Alfredo Moralejo <amoralej@redhat.com> - zed-2
+- Update GPG keys for SIG repos
+
 * Mon Oct 24 2022 Joel Capitao <jcapitao@redhat.com> - zed-1
 - First release for RDO Zed
 
