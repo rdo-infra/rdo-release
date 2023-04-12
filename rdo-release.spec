@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        yoga
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -63,6 +63,9 @@ install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Fri Apr 14 2023 Alfredo Moralejo <amoralej@redhat.com> - yoga-2
+- Update GPG keys for SIG repos
+
 * Tue Apr 05 2022 Alfredo Moralejo <amoralej@redhat.com> - yoga-1
 - First release for RDO Yoga
 
