@@ -1,0 +1,8 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 14 Apr 2023 06:46:07 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/rdo-infra/rdo-release/+/48313
+Project: rdo-infra/rdo-release
+Branch: refs/heads/yoga-rdo
