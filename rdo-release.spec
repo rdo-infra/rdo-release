@@ -1,6 +1,6 @@
 Name:           rdo-release
 Version:        antelope
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -44,6 +44,9 @@ install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Jun 05 2022 Joel Capitao <jcapitao@redhat.com> - antelope-3
+- Edit trunk repos
+
 * Wed Apr 12 2023 Alfredo Moralejo <amoralej@redhat.com> - antelope-2
 - Update GPG keys for SIG repos
 
