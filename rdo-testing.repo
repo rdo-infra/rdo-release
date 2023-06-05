@@ -75,6 +75,20 @@ enabled=0
 gpgcheck=0
 module_hotfixes=1
 
+[rdo-trunk-antelope-tested-component-podified]
+name=rdo-trunk-antelope-tested-component-podified
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/podified/current-tripleo-rdo
+enabled=0
+gpgcheck=0
+module_hotfixes=1
+
+[rdo-trunk-antelope-tested-component-puppet]
+name=rdo-trunk-antelope-tested-component-puppet
+baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/puppet/current-tripleo-rdo
+enabled=0
+gpgcheck=0
+module_hotfixes=1
+
 [rdo-trunk-antelope-tested-component-security]
 name=rdo-trunk-antelope-tested-component-security
 baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/security/current-tripleo-rdo
@@ -96,23 +110,9 @@ enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-tripleo]
-name=rdo-trunk-antelope-tested-component-tripleo
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/tripleo/current-tripleo-rdo
-enabled=0
-gpgcheck=0
-module_hotfixes=1
-
 [rdo-trunk-antelope-tested-component-ui]
 name=rdo-trunk-antelope-tested-component-ui
 baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/ui/current-tripleo-rdo
-enabled=0
-gpgcheck=0
-module_hotfixes=1
-
-[rdo-trunk-antelope-tested-component-validation]
-name=rdo-trunk-antelope-tested-component-validation
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/validation/current-tripleo-rdo
 enabled=0
 gpgcheck=0
 module_hotfixes=1
