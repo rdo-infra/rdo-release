@@ -1,6 +1,6 @@
 Name:           rdo-release
-Version:        antelope
-Release:        3%{?dist}
+Version:        bobcat
+Release:        1%{?dist}
 Summary:        RDO repository configuration
 
 Group:          System Environment/Base
@@ -12,12 +12,13 @@ Source0001:     rdo-release.repo
 Source0002:     rdo-testing.repo
 Source0003:     messaging.repo
 Source0004:     nfv-openvswitch.repo
-Source0005:     ceph-quincy.repo
+Source0005:     ceph-reef.repo
 # GPG keys
 Source0101:     RPM-GPG-KEY-CentOS-SIG-Cloud
 Source0104:     RPM-GPG-KEY-CentOS-SIG-Messaging
 Source0105:     RPM-GPG-KEY-CentOS-SIG-NFV
 Source0106:     RPM-GPG-KEY-CentOS-SIG-Storage
+Source0107:     RPM-GPG-KEY-EPEL-9
 
 BuildArch:      noarch
 
@@ -38,12 +39,16 @@ install -Dpm 644 %{SOURCE101} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE104} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE105} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 install -Dpm 644 %{SOURCE106} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
+install -Dpm 644 %{SOURCE107} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 
 %files
 %{_sysconfdir}/yum.repos.d/*.repo
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Oct 11 2023 Joel Capitao <jcapitao@redhat.com> - bobcat-1
+- First release for RDO Bobcat
+
 * Mon Jun 05 2023 Joel Capitao <jcapitao@redhat.com> - antelope-3
 - Edit trunk repos
 
