@@ -1,118 +1,118 @@
-[openstack-antelope-testing]
-name=OpenStack Antelope Testing
-baseurl=https://buildlogs.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-antelope/
+[openstack-bobcat-testing]
+name=OpenStack Bobcat Testing
+baseurl=https://buildlogs.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-bobcat/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-baremetal]
-name=rdo-trunk-antelope-tested-component-baremetal
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/baremetal/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-baremetal]
+name=rdo-trunk-bobcat-tested-component-baremetal
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/baremetal/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-cinder]
-name=rdo-trunk-antelope-tested-component-cinder
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/cinder/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-cinder]
+name=rdo-trunk-bobcat-tested-component-cinder
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/cinder/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-clients]
-name=rdo-trunk-antelope-tested-component-clients
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/clients/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-clients]
+name=rdo-trunk-bobcat-tested-component-clients
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/clients/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-cloudops]
-name=rdo-trunk-antelope-tested-component-cloudops
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/cloudops/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-cloudops]
+name=rdo-trunk-bobcat-tested-component-cloudops
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/cloudops/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-common]
-name=rdo-trunk-antelope-tested-component-common
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/common/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-common]
+name=rdo-trunk-bobcat-tested-component-common
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/common/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-compute]
-name=rdo-trunk-antelope-tested-component-compute
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/compute/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-compute]
+name=rdo-trunk-bobcat-tested-component-compute
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/compute/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-glance]
-name=rdo-trunk-antelope-tested-component-glance
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/glance/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-glance]
+name=rdo-trunk-bobcat-tested-component-glance
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/glance/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-manila]
-name=rdo-trunk-antelope-tested-component-manila
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/manila/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-manila]
+name=rdo-trunk-bobcat-tested-component-manila
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/manila/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-network]
-name=rdo-trunk-antelope-tested-component-network
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/network/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-network]
+name=rdo-trunk-bobcat-tested-component-network
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/network/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-octavia]
-name=rdo-trunk-antelope-tested-component-octavia
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/octavia/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-octavia]
+name=rdo-trunk-bobcat-tested-component-octavia
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/octavia/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-podified]
-name=rdo-trunk-antelope-tested-component-podified
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/podified/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-podified]
+name=rdo-trunk-bobcat-tested-component-podified
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/podified/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-puppet]
-name=rdo-trunk-antelope-tested-component-puppet
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/puppet/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-puppet]
+name=rdo-trunk-bobcat-tested-component-puppet
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/puppet/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-security]
-name=rdo-trunk-antelope-tested-component-security
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/security/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-security]
+name=rdo-trunk-bobcat-tested-component-security
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/security/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-swift]
-name=rdo-trunk-antelope-tested-component-swift
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/swift/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-swift]
+name=rdo-trunk-bobcat-tested-component-swift
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/swift/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-tempest]
-name=rdo-trunk-antelope-tested-component-tempest
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/tempest/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-tempest]
+name=rdo-trunk-bobcat-tested-component-tempest
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/tempest/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-antelope-tested-component-ui]
-name=rdo-trunk-antelope-tested-component-ui
-baseurl=https://trunk.rdoproject.org/centos$releasever-antelope/component/ui/current-tripleo-rdo
+[rdo-trunk-bobcat-tested-component-ui]
+name=rdo-trunk-bobcat-tested-component-ui
+baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/ui/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
