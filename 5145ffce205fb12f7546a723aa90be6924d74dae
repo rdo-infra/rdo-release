@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d524ea7_ea8c7039",
+        "filename": "ceph-reef.repo",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-16T14:04:10Z",
+      "side": 1,
+      "message": "We had ceph enabled in previous releases. given that python3-rbd is pulled from here and required for cinder, i.e., i\u0027d put it as enabled by default.\n\nHowever, i\u0027d maintain epel-low-priority as disabled as it is only required for installing ceph services which is not the default case",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 3
+      },
+      "revId": "5145ffce205fb12f7546a723aa90be6924d74dae",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
