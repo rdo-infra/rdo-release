@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "893efe6e_b5d66714",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-16T14:54:09Z",
+      "side": 1,
+      "message": "we should not include tripleo component",
+      "revId": "b49b8a70aba78334472c18838c8edc17f0c35b93",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d00fcad6_4826edff",
+        "filename": "rdo-testing.repo",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-16T14:54:09Z",
+      "side": 1,
+      "message": "Bobcat",
+      "range": {
+        "startLine": 2,
+        "startChar": 15,
+        "endLine": 2,
+        "endChar": 23
+      },
+      "revId": "b49b8a70aba78334472c18838c8edc17f0c35b93",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8d0df079_859e66a2",
+        "filename": "rdo-testing.repo",
+        "patchSetId": 2
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-16T14:54:09Z",
+      "side": 1,
+      "message": "there shouldn\u0027t be tripleo component in bobcat",
+      "range": {
+        "startLine": 113,
+        "startChar": 0,
+        "endLine": 118,
+        "endChar": 17
+      },
+      "revId": "b49b8a70aba78334472c18838c8edc17f0c35b93",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
