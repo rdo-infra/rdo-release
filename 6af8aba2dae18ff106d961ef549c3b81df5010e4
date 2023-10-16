@@ -1,0 +1,8 @@
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 16 Oct 2023 15:25:55 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/rdo-infra/rdo-release/+/50461
+Project: rdo-infra/rdo-release
+Branch: refs/heads/bobcat-rdo
