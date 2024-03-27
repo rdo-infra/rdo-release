@@ -1,7 +1,7 @@
-[openstack-bobcat]
-name=OpenStack Bobcat Repository
-#baseurl=http://mirror.stream.centos.org/SIGs/$releasever-stream/cloud/$basearch/openstack-bobcat/
-metalink=https://mirrors.centos.org/metalink?repo=centos-cloud-sig-openstack-bobcat-$releasever-stream&arch=$basearch&protocol=https,http
+[openstack-caracal]
+name=OpenStack Caracal Repository
+#baseurl=http://mirror.stream.centos.org/SIGs/$releasever-stream/cloud/$basearch/openstack-caracal/
+metalink=https://mirrors.centos.org/metalink?repo=centos-cloud-sig-openstack-caracal-$releasever-stream&arch=$basearch&protocol=https,http
 gpgcheck=1
 enabled=1
 module_hotfixes=1

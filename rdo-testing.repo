@@ -1,118 +1,132 @@
-[openstack-bobcat-testing]
-name=OpenStack Bobcat Testing
-baseurl=https://buildlogs.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-bobcat/
+[openstack-caracal-testing]
+name=OpenStack Caracal Testing
+baseurl=https://buildlogs.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-caracal/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-baremetal]
-name=rdo-trunk-bobcat-tested-component-baremetal
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/baremetal/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-barbican]
+name=rdo-trunk-caracal-tested-component-barbican
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/barbican/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-cinder]
-name=rdo-trunk-bobcat-tested-component-cinder
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/cinder/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-baremetal]
+name=rdo-trunk-caracal-tested-component-baremetal
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/baremetal/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-clients]
-name=rdo-trunk-bobcat-tested-component-clients
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/clients/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-cinder]
+name=rdo-trunk-caracal-tested-component-cinder
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/cinder/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-cloudops]
-name=rdo-trunk-bobcat-tested-component-cloudops
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/cloudops/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-clients]
+name=rdo-trunk-caracal-tested-component-clients
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/clients/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-common]
-name=rdo-trunk-bobcat-tested-component-common
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/common/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-cloudops]
+name=rdo-trunk-caracal-tested-component-cloudops
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/cloudops/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-compute]
-name=rdo-trunk-bobcat-tested-component-compute
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/compute/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-common]
+name=rdo-trunk-caracal-tested-component-common
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/common/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-glance]
-name=rdo-trunk-bobcat-tested-component-glance
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/glance/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-compute]
+name=rdo-trunk-caracal-tested-component-compute
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/compute/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-manila]
-name=rdo-trunk-bobcat-tested-component-manila
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/manila/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-designate]
+name=rdo-trunk-caracal-tested-component-designate
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/designate/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-network]
-name=rdo-trunk-bobcat-tested-component-network
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/network/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-glance]
+name=rdo-trunk-caracal-tested-component-glance
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/glance/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-octavia]
-name=rdo-trunk-bobcat-tested-component-octavia
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/octavia/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-keystone]
+name=rdo-trunk-caracal-tested-component-keystone
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/keystone/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-podified]
-name=rdo-trunk-bobcat-tested-component-podified
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/podified/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-manila]
+name=rdo-trunk-caracal-tested-component-manila
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/manila/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-puppet]
-name=rdo-trunk-bobcat-tested-component-puppet
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/puppet/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-network]
+name=rdo-trunk-caracal-tested-component-network
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/network/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-security]
-name=rdo-trunk-bobcat-tested-component-security
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/security/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-octavia]
+name=rdo-trunk-caracal-tested-component-octavia
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/octavia/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-swift]
-name=rdo-trunk-bobcat-tested-component-swift
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/swift/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-podified]
+name=rdo-trunk-caracal-tested-component-podified
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/podified/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-tempest]
-name=rdo-trunk-bobcat-tested-component-tempest
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/tempest/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-puppet]
+name=rdo-trunk-caracal-tested-component-puppet
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/puppet/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-bobcat-tested-component-ui]
-name=rdo-trunk-bobcat-tested-component-ui
-baseurl=https://trunk.rdoproject.org/centos$releasever-bobcat/component/ui/puppet-passed-ci
+[rdo-trunk-caracal-tested-component-swift]
+name=rdo-trunk-caracal-tested-component-swift
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/swift/puppet-passed-ci
+enabled=0
+gpgcheck=0
+module_hotfixes=1
+
+[rdo-trunk-caracal-tested-component-tempest]
+name=rdo-trunk-caracal-tested-component-tempest
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/tempest/puppet-passed-ci
+enabled=0
+gpgcheck=0
+module_hotfixes=1
+
+[rdo-trunk-caracal-tested-component-ui]
+name=rdo-trunk-caracal-tested-component-ui
+baseurl=https://trunk.rdoproject.org/centos$releasever-caracal/component/ui/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1

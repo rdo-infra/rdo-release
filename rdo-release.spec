@@ -1,5 +1,5 @@
 Name:           rdo-release
-Version:        bobcat
+Version:        caracal
 Release:        1%{?dist}
 Summary:        RDO repository configuration
 
@@ -46,6 +46,9 @@ install -Dpm 644 %{SOURCE107} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Wed Mar 27 2024 Joel Capitao <jcapitao@redhat.com> - caracal-1
+- First release for RDO Caracal
+
 * Wed Oct 11 2023 Joel Capitao <jcapitao@redhat.com> - bobcat-1
 - First release for RDO Bobcat
 
