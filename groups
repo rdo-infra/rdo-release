@@ -1,7 +1,7 @@
 # UUID Group Name
 global:Registered-Users	Registered Users
-05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
-global:Anonymous-Users	Anonymous Users
-9fda2a52923d322d72a0da1dde4df94c614d0585	rdo-infra/rdo-release-core
-cf637ab8ed7def4a4dbcc13902596f17edfe25cd	rdo-infra/rdo-release-ptl
 6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Service Users
+global:Anonymous-Users	Anonymous Users
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+cf637ab8ed7def4a4dbcc13902596f17edfe25cd	rdo-infra/rdo-release-ptl
+9fda2a52923d322d72a0da1dde4df94c614d0585	rdo-infra/rdo-release-core
