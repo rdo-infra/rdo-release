@@ -1,5 +1,5 @@
 Name:           rdo-release
-Version:        caracal
+Version:        dalmatian
 Release:        1%{?dist}
 Summary:        RDO repository configuration
 
@@ -46,6 +46,9 @@ install -Dpm 644 %{SOURCE107} %{buildroot}%{_sysconfdir}/pki/rpm-gpg
 %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-*
 
 %changelog
+* Mon Sep 30 2024 Joel Capitao <jcapitao@redhat.com> - dalmatian-1
+- First release for RDO Dalmatian
+
 * Wed Mar 27 2024 Joel Capitao <jcapitao@redhat.com> - caracal-1
 - First release for RDO Caracal
 
