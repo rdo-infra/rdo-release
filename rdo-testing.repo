@@ -1,132 +1,139 @@
-[openstack-dalmatian-testing]
+[openstack-epoxy-testing]
 name=OpenStack Dalmatian Testing
-baseurl=https://buildlogs.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-dalmatian/
+baseurl=https://buildlogs.centos.org/centos/$releasever-stream/cloud/$basearch/openstack-epoxy/
 gpgcheck=0
 enabled=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-barbican]
-name=rdo-trunk-dalmatian-tested-component-barbican
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/barbican/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-barbican]
+name=rdo-trunk-epoxy-tested-component-barbican
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/barbican/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-baremetal]
-name=rdo-trunk-dalmatian-tested-component-baremetal
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/baremetal/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-baremetal]
+name=rdo-trunk-epoxy-tested-component-baremetal
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/baremetal/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-cinder]
-name=rdo-trunk-dalmatian-tested-component-cinder
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/cinder/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-cinder]
+name=rdo-trunk-epoxy-tested-component-cinder
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/cinder/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-clients]
-name=rdo-trunk-dalmatian-tested-component-clients
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/clients/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-clients]
+name=rdo-trunk-epoxy-tested-component-clients
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/clients/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-cloudops]
-name=rdo-trunk-dalmatian-tested-component-cloudops
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/cloudops/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-cloudops]
+name=rdo-trunk-epoxy-tested-component-cloudops
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/cloudops/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-common]
-name=rdo-trunk-dalmatian-tested-component-common
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/common/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-common]
+name=rdo-trunk-epoxy-tested-component-common
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/common/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-compute]
-name=rdo-trunk-dalmatian-tested-component-compute
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/compute/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-compute]
+name=rdo-trunk-epoxy-tested-component-compute
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/compute/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-designate]
-name=rdo-trunk-dalmatian-tested-component-designate
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/designate/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-designate]
+name=rdo-trunk-epoxy-tested-component-designate
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/designate/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-glance]
-name=rdo-trunk-dalmatian-tested-component-glance
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/glance/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-glance]
+name=rdo-trunk-epoxy-tested-component-glance
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/glance/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-keystone]
-name=rdo-trunk-dalmatian-tested-component-keystone
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/keystone/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-keystone]
+name=rdo-trunk-epoxy-tested-component-keystone
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/keystone/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-manila]
-name=rdo-trunk-dalmatian-tested-component-manila
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/manila/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-manila]
+name=rdo-trunk-epoxy-tested-component-manila
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/manila/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-network]
-name=rdo-trunk-dalmatian-tested-component-network
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/network/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-network]
+name=rdo-trunk-epoxy-tested-component-network
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/network/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-octavia]
-name=rdo-trunk-dalmatian-tested-component-octavia
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/octavia/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-octavia]
+name=rdo-trunk-epoxy-tested-component-octavia
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/octavia/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-podified]
-name=rdo-trunk-dalmatian-tested-component-podified
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/podified/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-optimize]
+name=rdo-trunk-epoxy-tested-component-optimize
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/optimize/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-puppet]
-name=rdo-trunk-dalmatian-tested-component-puppet
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/puppet/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-podified]
+name=rdo-trunk-epoxy-tested-component-podified
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/podified/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-swift]
-name=rdo-trunk-dalmatian-tested-component-swift
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/swift/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-puppet]
+name=rdo-trunk-epoxy-tested-component-puppet
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/puppet/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-tempest]
-name=rdo-trunk-dalmatian-tested-component-tempest
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/tempest/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-swift]
+name=rdo-trunk-epoxy-tested-component-swift
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/swift/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
 
-[rdo-trunk-dalmatian-tested-component-ui]
-name=rdo-trunk-dalmatian-tested-component-ui
-baseurl=https://trunk.rdoproject.org/centos$releasever-dalmatian/component/ui/puppet-passed-ci
+[rdo-trunk-epoxy-tested-component-tempest]
+name=rdo-trunk-epoxy-tested-component-tempest
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/tempest/puppet-passed-ci
+enabled=0
+gpgcheck=0
+module_hotfixes=1
+
+[rdo-trunk-epoxy-tested-component-ui]
+name=rdo-trunk-epoxy-tested-component-ui
+baseurl=https://trunk.rdoproject.org/centos$releasever-epoxy/component/ui/puppet-passed-ci
 enabled=0
 gpgcheck=0
 module_hotfixes=1
